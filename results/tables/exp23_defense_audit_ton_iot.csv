@@ -1,0 +1,4 @@
+defense,coupling_C_norm,stat_nu_session,stat_nu_allow,stat_nu_final,stat_alert_rate,evasion_nes_independent,evasion_nes_antithetic_jitter,evasion_square,evasion_random_search,benign_fp
+tascp,2.10579e+07,0.282977,0.184866,0.315508,0.576203,,,,,0
+blacklight_sim,,0.356506,0,0.534759,0.821747,,,,,1
+rate_limit,,0,0,0,0.465241,,,,,0

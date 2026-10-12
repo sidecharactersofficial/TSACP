@@ -1,0 +1,23 @@
+[package]
+name = "fast-loop"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+arc-swap = "1.9.2"
+axum = "0.8.9"
+chrono = { version = "0.4.45", features = ["serde"] }
+crossbeam-channel = "0.5.15"
+dashmap = "6.2.1"
+nalgebra = "0.35.0"
+rusqlite = { version = "0.40.1", features = ["bundled"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.150"
+tokio = { version = "1.52.3", features = ["full"] }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "hot_path"
+harness = false

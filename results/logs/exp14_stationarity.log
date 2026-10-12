@@ -1,0 +1,109 @@
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 4560 points for attack
+
+=== EXP 14: stationarity sweep on unsw_nb15 ===
+
+=== EXP 14: stationarity sweep (unsw_nb15) ===
+  gamma=   5.0 | delta_theta 0.0355 | nu_session   0.36% | nu_final   1.95% | ctrl 0.00% | pred halfwidth 0.0030
+  gamma=  10.0 | delta_theta 0.0710 | nu_session   0.46% | nu_final   2.73% | ctrl 0.00% | pred halfwidth 0.0060
+  gamma=  25.0 | delta_theta 0.1775 | nu_session   1.17% | nu_final   5.47% | ctrl 0.00% | pred halfwidth 0.0149
+  gamma=  50.0 | delta_theta 0.3550 | nu_session   2.41% | nu_final  10.55% | ctrl 0.00% | pred halfwidth 0.0297
+  gamma= 100.0 | delta_theta 0.7100 | nu_session   5.37% | nu_final  10.55% | ctrl 0.00% | pred halfwidth 0.0580
+  gamma= 200.0 | delta_theta 1.2835 | nu_session   8.89% | nu_final  10.55% | ctrl 0.00% | pred halfwidth 0.0991
+  sin(dtheta/2) width scaling: mean relative error 30.6% over 5 ratios
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 4560 points for attack
+
+=== EXP 14: stationarity sweep on cicids2017 ===
+
+=== EXP 14: stationarity sweep (cicids2017) ===
+  gamma=   5.0 | delta_theta 0.0324 | nu_session   8.53% | nu_final  50.39% | ctrl 0.00% | pred halfwidth 0.0038
+  gamma=  10.0 | delta_theta 0.0648 | nu_session  12.63% | nu_final  48.83% | ctrl 0.00% | pred halfwidth 0.0075
+  gamma=  25.0 | delta_theta 0.1621 | nu_session  16.47% | nu_final  42.58% | ctrl 0.00% | pred halfwidth 0.0187
+  gamma=  50.0 | delta_theta 0.3241 | nu_session  15.95% | nu_final  35.16% | ctrl 0.00% | pred halfwidth 0.0373
+  gamma= 100.0 | delta_theta 0.6482 | nu_session  14.39% | nu_final  35.16% | ctrl 0.00% | pred halfwidth 0.0731
+  gamma= 200.0 | delta_theta 1.1992 | nu_session  13.15% | nu_final  35.16% | ctrl 0.00% | pred halfwidth 0.1284
+  sin(dtheta/2) width scaling: mean relative error 71.1% over 5 ratios
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+
+=== EXP 14/Opt-B: CICIDS multi-seed, seed 42 ===
+
+--- NES vs Undefended ---
+ASR: 22.30% | Mean Q to success: 142.4 | Mean L2: 0.0599 | Total Q: 504000
+
+--- NES vs TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 22.30% | Mean Q to success: 144.5 | Mean L2: 0.0600 | Total Q: 504000
+
+--- NES vs Undefended + domain ---
+ASR: 21.55% | Mean Q to success: 143.1 | Mean L2: 0.0521 | Total Q: 504000
+
+--- HSJ vs Undefended ---
+ASR: 15.05% | Mean Q to success: 56.1 | Mean L2: 0.6424 | Total Q: 2014000
+
+--- HSJ vs TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 87.35%
+ASR: 87.40% | Mean Q to success: 62.1 | Mean L2: 1.0592 | Total Q: 2041000
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+
+=== EXP 14/Opt-B: CICIDS multi-seed, seed 43 ===
+
+--- NES vs Undefended ---
+ASR: 20.50% | Mean Q to success: 143.8 | Mean L2: 0.0598 | Total Q: 504000
+
+--- NES vs TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 20.35% | Mean Q to success: 143.1 | Mean L2: 0.0598 | Total Q: 504000
+
+--- NES vs Undefended + domain ---
+ASR: 19.75% | Mean Q to success: 143.6 | Mean L2: 0.0521 | Total Q: 504000
+
+--- HSJ vs Undefended ---
+ASR: 15.20% | Mean Q to success: 48.7 | Mean L2: 0.6039 | Total Q: 2102000
+
+--- HSJ vs TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 88.30%
+ASR: 88.25% | Mean Q to success: 48.3 | Mean L2: 1.0578 | Total Q: 2114000
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+
+=== EXP 14/Opt-B: CICIDS multi-seed, seed 44 ===
+
+--- NES vs Undefended ---
+ASR: 19.70% | Mean Q to success: 143.9 | Mean L2: 0.0593 | Total Q: 504000
+
+--- NES vs TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 19.60% | Mean Q to success: 143.2 | Mean L2: 0.0593 | Total Q: 504000
+
+--- NES vs Undefended + domain ---
+ASR: 19.30% | Mean Q to success: 144.6 | Mean L2: 0.0521 | Total Q: 504000
+
+--- HSJ vs Undefended ---
+ASR: 15.60% | Mean Q to success: 52.7 | Mean L2: 0.5385 | Total Q: 2108000
+
+--- HSJ vs TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 88.65%
+ASR: 88.80% | Mean Q to success: 52.4 | Mean L2: 1.0996 | Total Q: 2068500
+NES / Undefended                         | pooled  20.83% [19.82, 21.88]
+NES / TASCP (Naive)                      | pooled  20.75% [19.74, 21.79]
+NES / Undefended + Domain-Constrained    | pooled  20.20% [19.20, 21.23]
+HSJ / Undefended                         | pooled  15.28% [14.40, 16.22]
+HSJ / TASCP (Naive)                      | pooled  88.15% [87.31, 88.94]

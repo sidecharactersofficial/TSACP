@@ -1,0 +1,345 @@
+{
+  "adaptive_evaders": {
+    "NES baseline (no evasion)": {
+      "verified_asr": 0.0,
+      "internal_asr": 0.0,
+      "queries_flagged": 494646,
+      "total_queries": 506000,
+      "flag_rate": 0.9775612648221343,
+      "client_detected": true
+    },
+    "NES + query jitter (0.12)": {
+      "verified_asr": 0.0,
+      "internal_asr": 0.0,
+      "queries_flagged": 421157,
+      "total_queries": 506000,
+      "flag_rate": 0.8323260869565218,
+      "client_detected": true
+    },
+    "NES + multi-identity (5 ids)": {
+      "verified_asr": 0.0,
+      "internal_asr": 0.0,
+      "queries_flagged": 230099,
+      "total_queries": 506000,
+      "flag_rate": 0.45474110671936757,
+      "client_detected": true
+    },
+    "NES + multi-identity (10 ids)": {
+      "verified_asr": 0.0,
+      "internal_asr": 0.0,
+      "queries_flagged": 228618,
+      "total_queries": 506000,
+      "flag_rate": 0.4518142292490119,
+      "client_detected": true
+    },
+    "HSJ baseline (no evasion)": {
+      "verified_asr": 0.0,
+      "internal_asr": 0.14499999582767487,
+      "queries_flagged": 1866220,
+      "total_queries": 2016000,
+      "flag_rate": 0.925704365079365,
+      "client_detected": true
+    },
+    "HSJ + min-distance (0.15)": {
+      "verified_asr": 0.0,
+      "internal_asr": 0.15150000154972076,
+      "queries_flagged": 1862486,
+      "total_queries": 2028000,
+      "flag_rate": 0.9183856015779093,
+      "client_detected": true
+    }
+  },
+  "detector_sweep": {
+    "tau=0.05,k=3": {
+      "benign_boundary_fpr": 0.1165,
+      "NES_flag_rate": 0.04896763392857143,
+      "HSJ_flag_rate": 0.9400505093864469
+    },
+    "tau=0.05,k=5": {
+      "benign_boundary_fpr": 0.032,
+      "NES_flag_rate": 0.04738653273809524,
+      "HSJ_flag_rate": 0.9306747939560439
+    },
+    "tau=0.05,k=8": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.043712797619047616,
+      "HSJ_flag_rate": 0.9259493761446886
+    },
+    "tau=0.05,k=12": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.0224609375,
+      "HSJ_flag_rate": 0.9206730769230769
+    },
+    "tau=0.05,k=20": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.0,
+      "HSJ_flag_rate": 0.910649896978022
+    },
+    "tau=0.1,k=3": {
+      "benign_boundary_fpr": 0.132,
+      "NES_flag_rate": 0.9852430555555556,
+      "HSJ_flag_rate": 0.9497481684981685
+    },
+    "tau=0.1,k=5": {
+      "benign_boundary_fpr": 0.0395,
+      "NES_flag_rate": 0.977570064484127,
+      "HSJ_flag_rate": 0.9377217834249084
+    },
+    "tau=0.1,k=8": {
+      "benign_boundary_fpr": 0.001,
+      "NES_flag_rate": 0.9682539682539683,
+      "HSJ_flag_rate": 0.9326386504120879
+    },
+    "tau=0.1,k=12": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.9523809523809523,
+      "HSJ_flag_rate": 0.928217290521978
+    },
+    "tau=0.1,k=20": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.9206349206349206,
+      "HSJ_flag_rate": 0.9192779876373627
+    },
+    "tau=0.2,k=3": {
+      "benign_boundary_fpr": 0.175,
+      "NES_flag_rate": 0.9880952380952381,
+      "HSJ_flag_rate": 0.9624613667582418
+    },
+    "tau=0.2,k=5": {
+      "benign_boundary_fpr": 0.0575,
+      "NES_flag_rate": 0.9801587301587301,
+      "HSJ_flag_rate": 0.9446686126373627
+    },
+    "tau=0.2,k=8": {
+      "benign_boundary_fpr": 0.0025,
+      "NES_flag_rate": 0.9682539682539683,
+      "HSJ_flag_rate": 0.9347634787087912
+    },
+    "tau=0.2,k=12": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.9523809523809523,
+      "HSJ_flag_rate": 0.9307391826923077
+    },
+    "tau=0.2,k=20": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.9206349206349206,
+      "HSJ_flag_rate": 0.9227406707875457
+    },
+    "tau=0.3,k=3": {
+      "benign_boundary_fpr": 0.251,
+      "NES_flag_rate": 0.9880952380952381,
+      "HSJ_flag_rate": 0.9716904189560439
+    },
+    "tau=0.3,k=5": {
+      "benign_boundary_fpr": 0.093,
+      "NES_flag_rate": 0.9801587301587301,
+      "HSJ_flag_rate": 0.950935782967033
+    },
+    "tau=0.3,k=8": {
+      "benign_boundary_fpr": 0.0065,
+      "NES_flag_rate": 0.9682539682539683,
+      "HSJ_flag_rate": 0.9390345982142857
+    },
+    "tau=0.3,k=12": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.9523809523809523,
+      "HSJ_flag_rate": 0.9320233802655677
+    },
+    "tau=0.3,k=20": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.9206349206349206,
+      "HSJ_flag_rate": 0.9240391769688645
+    },
+    "tau=0.5,k=3": {
+      "benign_boundary_fpr": 0.3835,
+      "NES_flag_rate": 0.9880952380952381,
+      "HSJ_flag_rate": 0.9787016369047619
+    },
+    "tau=0.5,k=5": {
+      "benign_boundary_fpr": 0.188,
+      "NES_flag_rate": 0.9801587301587301,
+      "HSJ_flag_rate": 0.9650297619047619
+    },
+    "tau=0.5,k=8": {
+      "benign_boundary_fpr": 0.029,
+      "NES_flag_rate": 0.9682539682539683,
+      "HSJ_flag_rate": 0.9563694768772893
+    },
+    "tau=0.5,k=12": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.9523809523809523,
+      "HSJ_flag_rate": 0.9448152758699634
+    },
+    "tau=0.5,k=20": {
+      "benign_boundary_fpr": 0.0,
+      "NES_flag_rate": 0.9206349206349206,
+      "HSJ_flag_rate": 0.9271799164377289
+    }
+  },
+  "roc": {
+    "NES": [
+      {
+        "k": 0,
+        "tpr": 0.9933948516845703,
+        "fpr": 0.3409999907016754
+      },
+      {
+        "k": 1,
+        "tpr": 0.9920634627342224,
+        "fpr": 0.20350000262260437
+      },
+      {
+        "k": 2,
+        "tpr": 0.9854245781898499,
+        "fpr": 0.13199999928474426
+      },
+      {
+        "k": 3,
+        "tpr": 0.9841269850730896,
+        "fpr": 0.07800000160932541
+      },
+      {
+        "k": 4,
+        "tpr": 0.9774722456932068,
+        "fpr": 0.039500001817941666
+      },
+      {
+        "k": 5,
+        "tpr": 0.976190447807312,
+        "fpr": 0.017500000074505806
+      },
+      {
+        "k": 6,
+        "tpr": 0.9695873260498047,
+        "fpr": 0.004000000189989805
+      },
+      {
+        "k": 7,
+        "tpr": 0.9682539701461792,
+        "fpr": 0.0010000000474974513
+      },
+      {
+        "k": 8,
+        "tpr": 0.9616587162017822,
+        "fpr": 0.0
+      },
+      {
+        "k": 9,
+        "tpr": 0.9603174328804016,
+        "fpr": 0.0
+      },
+      {
+        "k": 10,
+        "tpr": 0.9537103176116943,
+        "fpr": 0.0
+      }
+    ],
+    "HSJ": [
+      {
+        "k": 0,
+        "tpr": 0.9655691981315613,
+        "fpr": 0.3409999907016754
+      },
+      {
+        "k": 1,
+        "tpr": 0.9636898636817932,
+        "fpr": 0.20350000262260437
+      },
+      {
+        "k": 2,
+        "tpr": 0.9449239373207092,
+        "fpr": 0.13199999928474426
+      },
+      {
+        "k": 3,
+        "tpr": 0.9349592924118042,
+        "fpr": 0.07800000160932541
+      },
+      {
+        "k": 4,
+        "tpr": 0.9268051981925964,
+        "fpr": 0.039500001817941666
+      },
+      {
+        "k": 5,
+        "tpr": 0.9206830263137817,
+        "fpr": 0.017500000074505806
+      },
+      {
+        "k": 6,
+        "tpr": 0.9168238639831543,
+        "fpr": 0.004000000189989805
+      },
+      {
+        "k": 7,
+        "tpr": 0.9146540760993958,
+        "fpr": 0.0010000000474974513
+      },
+      {
+        "k": 8,
+        "tpr": 0.9124695658683777,
+        "fpr": 0.0
+      },
+      {
+        "k": 9,
+        "tpr": 0.9103140234947205,
+        "fpr": 0.0
+      },
+      {
+        "k": 10,
+        "tpr": 0.908158004283905,
+        "fpr": 0.0
+      }
+    ]
+  },
+  "hash_vs_l2": {
+    "NES / quantize-then-hash (best)": {
+      "config": "q=0.1,r=20",
+      "flag_rate": 0.05424801587301587,
+      "grid": {
+        "NES/q=0.02,r=0": 0.0,
+        "NES/q=0.02,r=5": 0.01113888888888889,
+        "NES/q=0.02,r=10": 0.026468253968253967,
+        "NES/q=0.02,r=20": 0.03426388888888889,
+        "NES/q=0.05,r=0": 0.00031944444444444446,
+        "NES/q=0.05,r=5": 0.025117063492063493,
+        "NES/q=0.05,r=10": 0.03015674603174603,
+        "NES/q=0.05,r=20": 0.04541468253968254,
+        "NES/q=0.1,r=0": 0.0006388888888888889,
+        "NES/q=0.1,r=5": 0.028273809523809524,
+        "NES/q=0.1,r=10": 0.034761904761904765,
+        "NES/q=0.1,r=20": 0.05424801587301587
+      }
+    },
+    "HSJ / quantize-then-hash (best)": {
+      "config": "q=0.1,r=20",
+      "flag_rate": 0.9122600588812562,
+      "grid": {
+        "HSJ/q=0.02,r=0": 0.005939156035328754,
+        "HSJ/q=0.02,r=5": 0.5689749754661433,
+        "HSJ/q=0.02,r=10": 0.6155961727183513,
+        "HSJ/q=0.02,r=20": 0.7545927379784102,
+        "HSJ/q=0.05,r=0": 0.24197791952894995,
+        "HSJ/q=0.05,r=5": 0.6495058881256134,
+        "HSJ/q=0.05,r=10": 0.7003842001962709,
+        "HSJ/q=0.05,r=20": 0.8540387634936212,
+        "HSJ/q=0.1,r=0": 0.34521099116781157,
+        "HSJ/q=0.1,r=5": 0.7335785083415113,
+        "HSJ/q=0.1,r=10": 0.8227605495583906,
+        "HSJ/q=0.1,r=20": 0.9122600588812562
+      }
+    },
+    "NES / L2 proxy": {
+      "flag_rate": 0.4503035714285714
+    },
+    "HSJ / L2 proxy": {
+      "flag_rate": 0.39102404317958783
+    },
+    "Benign control (random benign) / hash worst-case": {
+      "flag_rate": 0.845703125
+    },
+    "Benign control (boundary benign) / hash worst-case": {
+      "flag_rate": 0.875
+    }
+  }
+}

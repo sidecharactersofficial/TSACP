@@ -1,0 +1,46 @@
+Loading ton_iot dataset (92 MB)...
+Benign samples (streamed): 1218993
+Loading trained NIDS classifier...
+Correctly classified benign: 1175602
+Sampled 100 points for attack
+
+=== defense: tascp ===
+  defense: tascp
+  coupling_C_norm: 21057900.0
+  coupling_firing_frac: 1.0
+  stat_nu_session: 0.283
+  stat_nu_allow: 0.1849
+  stat_n_adv0: 87
+  stat_nu_final: 0.3155
+  stat_alert_rate: 0.5762
+  evasion: {'nes_independent': 0.029999999329447746, 'nes_antithetic_jitter': 0.12999999523162842, 'square': 0.699999988079071, 'random_search': 0.5799999833106995}
+
+=== defense: blacklight_sim ===
+  defense: blacklight_sim
+  coupling_C_norm: None
+  coupling_firing_frac: None
+  stat_nu_session: 0.3565
+  stat_nu_allow: 0.0
+  stat_n_adv0: 87
+  stat_nu_final: 0.5348
+  stat_alert_rate: 0.8217
+  evasion: {'nes_independent': 0.0, 'nes_antithetic_jitter': 0.0, 'square': 0.0, 'random_search': 0.0}
+
+=== defense: rate_limit ===
+  defense: rate_limit
+  coupling_C_norm: None
+  coupling_firing_frac: None
+  stat_nu_session: 0.0
+  stat_nu_allow: 0.0
+  stat_n_adv0: 87
+  stat_nu_final: 0.0
+  stat_alert_rate: 0.4652
+  evasion: {'nes_independent': 0.0, 'nes_antithetic_jitter': 0.0, 'square': 0.0, 'random_search': 0.0}
+
+benign false-positive rates: {'tascp': 0.0, 'blacklight_sim': 1.0, 'rate_limit': 0.0}
+
+=== EXP 23 SUMMARY (RQ6 defense audit) ===
+defense          coupling  nu_any nu_allow  nes_independen  nes_antithetic          square   random_search   benignFP
+tascp           21057900.000  28.30%   18.49%            3.0%           13.0%           70.0%           58.0%   0.0%
+blacklight_sim        n/a  35.65%    0.00%            0.0%            0.0%            0.0%            0.0%   100.0%
+rate_limit            n/a   0.00%    0.00%            0.0%            0.0%            0.0%            0.0%   0.0%

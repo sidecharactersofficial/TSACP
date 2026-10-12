@@ -1,0 +1,25 @@
+{
+  "experiment_id": "E-EXP09-BLACKBOX-HSJ",
+  "experiment_number": 9,
+  "claim": "C5",
+  "description": "Black-box offensive attack (HSJ-style) with query budget; multi-seed.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "budget": 20,
+    "seeds": "multi"
+  },
+  "expected_output": "results/logs/exp9_blackbox/, results/tables/exp9_*",
+  "expected_properties": {
+    "black_box_asr": "low; verified vs archived JSON"
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp9_blackbox_attack/run.py",
+  "git_commit": "270807a",
+  "note": "Fresh run diffed against archived JSON via verification/compare_results.py."
+}

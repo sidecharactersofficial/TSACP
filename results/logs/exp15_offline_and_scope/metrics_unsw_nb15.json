@@ -1,0 +1,55 @@
+{
+  "offline": {
+    "whitebox_offline": {
+      "bit_identical_dacm": true,
+      "bit_identical_undefended": true,
+      "max_abs_diff_tascp_dacm": 0.0,
+      "verdict_agreement": true,
+      "submitted_asr": 0.10499999672174454
+    },
+    "surrogate_mismatch": {
+      "surrogate_logits": "tensor([[0.0398],\n        [0.0456],\n        [0.0400],\n        ...,\n        [0.0243],\n        [0.0366],\n        [0.0369]])",
+      "dacm_logits": "tensor([[-12.8507],\n        [ -8.6270],\n        [-13.6762],\n        ...,\n        [-11.0423],\n        [-12.2865],\n        [-11.8125]])",
+      "transfer_success_undefended": 0.005499999970197678,
+      "transfer_success_dacm": 0.005499999970197678,
+      "transfer_success_tascp_fresh_session": 0.005499999970197678
+    }
+  },
+  "cor3_scope": {
+    "NES (antithetic)": {
+      "asr": 0.007499999832361937,
+      "trigger_fire_frac": 0.09928286852589642,
+      "total_queries": 252000
+    },
+    "nes_independent": {
+      "asr": 0.006000000052154064,
+      "trigger_fire_frac": 0.20906639004149377,
+      "total_queries": 242000
+    },
+    "spsa": {
+      "asr": 0.012500000186264515,
+      "trigger_fire_frac": 0.649020920502092,
+      "total_queries": 240000
+    },
+    "zoo": {
+      "asr": 0.006000000052154064,
+      "trigger_fire_frac": 0.024897119341563786,
+      "total_queries": 244000
+    },
+    "simba": {
+      "asr": 0.008500000461935997,
+      "trigger_fire_frac": 0.23299585062240663,
+      "total_queries": 242000
+    },
+    "square": {
+      "asr": 0.46700000762939453,
+      "trigger_fire_frac": 0.20725523012552302,
+      "total_queries": 240000
+    },
+    "boundary": {
+      "asr": 0.7580000162124634,
+      "trigger_fire_frac": 0.41012133891213387,
+      "total_queries": 240000
+    }
+  }
+}

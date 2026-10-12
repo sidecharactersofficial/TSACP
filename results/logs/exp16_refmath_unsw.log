@@ -1,0 +1,75 @@
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 2000 points for attack
+
+=== EXP 16: reference-math validation (unsw_nb15) ===
+
+=== EXP 16 part A: Lemma 3 — autograd vs FD grad(eps_p) ===
+  comparisons: 9216 | median rel err (all): 1.37e-05
+  median rel err (M_t>0): 1.37e-05 | p90: 9.86e-05
+  fraction of trajectory points with M_t>0: 0.997
+
+=== EXP 16 part B: Theorem-1 decomposition ===
+  trigger fired on 100.0% of the batch
+  cos(full, angle-detached) = 1.0000
+  cos(full, basis-fixed)    = 1.0000
+  |g| full 100.3897 | angle-det 100.3897 | basis-fixed 100.3897
+
+=== EXP 16 part C: Lemma 2 rho on real gradients ===
+  E[rho] real 0.1982 vs isotropic prediction 0.2157 (ratio 0.92x)
+
+=== EXP 16 part D: Prop 3 — NES cosine vs q ===
+  q=   2 | measured cos 0.0076 | isotropic pred 0.2085
+  q=   5 | measured cos 0.0263 | isotropic pred 0.3194
+  q=  10 | measured cos 0.0213 | isotropic pred 0.4303
+  q=  25 | measured cos 0.0120 | isotropic pred 0.6019
+  q=  50 | measured cos 0.0429 | isotropic pred 0.7293
+  q= 100 | measured cos 0.0457 | isotropic pred 0.8333
+
+=== EXP 16 part E: Corollary 3 — M_t histograms from real NES runs ===
+  with anchor updates:    E[M_t] -0.703 | P(M>0) 0.0165
+  without anchor updates: E[M_t] -0.703 | P(M>0) 0.0000
+  theory E[M_t] = -2/sqrt(5) = -0.894
+
+=== EXP 16 SUMMARY ===
+{
+  "lemma3_fd_vs_autograd": {
+    "n_comparisons": 9216,
+    "median_rel_err_all": 1.3724229120271048e-05,
+    "median_rel_err_M_pos": 1.3722371022595325e-05,
+    "p90_rel_err_M_pos": 9.861444850685088e-05,
+    "M_pos_frac_mean": 0.9965277777777778
+  },
+  "theorem1_decomposition": {
+    "cos_full_vs_angle_detached": 1.0,
+    "cos_full_vs_basis_fixed": 1.0,
+    "cos_angle_vs_basis": 1.0,
+    "grad_norm_full": 100.38972473144531,
+    "grad_norm_angle_detached": 100.38972473144531,
+    "grad_norm_basis_fixed": 100.38972473144531,
+    "trigger_fired_frac": 1.0
+  },
+  "lemma2_rho": {
+    "rho_mean": 0.19819717691279948,
+    "rho_isotropic_pred": 0.21566554640687682,
+    "ratio_real_over_isotropic": 0.9190025027867857,
+    "d": 43,
+    "n_trials": 32
+  },
+  "cor3_mt": {
+    "n_blocks": 3,
+    "with_anchor": {
+      "mean": -0.7030324468061762,
+      "p_mt_gt_0": 0.016489497950819672,
+      "n": 31232
+    },
+    "without_anchor": {
+      "mean": -0.7034649248405537,
+      "p_mt_gt_0": 0.0,
+      "n": 29696
+    },
+    "theory_E_mt": -0.8944271909999159
+  }
+}

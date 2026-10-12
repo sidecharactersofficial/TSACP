@@ -1,0 +1,40 @@
+{
+  "experiment_id": "E-EXP21-TRIGGER-MATRIX",
+  "experiment_number": 21,
+  "claim": "C12",
+  "description": "Trigger matrix (momentum vs cosine/sign/displacement) across attack families.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    },
+    {
+      "name": "NF-ToN-IoT-v2",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/ton_iot/ton_iot_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "triggers": [
+      "momentum",
+      "cosine",
+      "sign",
+      "displacement"
+    ]
+  },
+  "expected_output": "results/logs/exp21_*/metrics_*.json, results/tables/exp21_*",
+  "expected_properties": {
+    "momentum_fire_rate_range": [
+      0.87,
+      1.0
+    ],
+    "collapsing_triggers_fire_rate_range": [
+      0.0,
+      0.01
+    ]
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp21_trigger_matrix/run.py",
+  "git_commit": "270807a"
+}

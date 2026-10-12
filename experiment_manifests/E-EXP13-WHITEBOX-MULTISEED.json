@@ -1,0 +1,25 @@
+{
+  "experiment_id": "E-EXP13-WHITEBOX-MULTISEED",
+  "experiment_number": 13,
+  "claim": "C7",
+  "description": "Multi-seed replication of the white-box attack with pooled statistics (canonical).",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "seeds": "multi",
+    "pooled": true
+  },
+  "expected_output": "results/logs/exp13_whitebox_multiseed/multiseed_unsw_nb15.json",
+  "expected_properties": {
+    "pooled_asr_tolerance": 0.02,
+    "per_seed_asr_tolerance": 0.03
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp13_whitebox_multiseed/run.py",
+  "git_commit": "270807a"
+}

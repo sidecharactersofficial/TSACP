@@ -1,0 +1,19 @@
+# Domain constraints for NF-ToN-IoT-v2 (third dataset, RQ5).
+# NetFlow-v9 features after log1p + min-max [0,1] normalization. Only the
+# discrete protocol/flag/count columns are treated as constrained; the
+# throughputs/byte counters are continuous. Conservative: this spec gates
+# the domain projector, which the RQ1/RQ3/RQ5 audit paths do not use.
+binary: []
+discrete:
+  - PROTOCOL
+  - L7_PROTO
+  - TCP_FLAGS
+  - CLIENT_TCP_FLAGS
+  - SERVER_TCP_FLAGS
+  - ICMP_TYPE
+  - ICMP_IPV4_TYPE
+  - DNS_QUERY_ID
+  - DNS_QUERY_TYPE
+  - DNS_TTL_ANSWER
+  - FTP_COMMAND_RET_CODE
+immutable: []

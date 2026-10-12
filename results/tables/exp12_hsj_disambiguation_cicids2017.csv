@@ -1,0 +1,7 @@
+condition,asr,mean_queries_to_success,trigger_fire_frac
+HSJ / Undefended (control),0.1505,56.12,0.0000
+HSJ / Delta-theta=0 (control),0.1505,56.12,0.0000
+HSJ / TASCP (Naive),0.8740,62.08,0.9906
+HSJ / Basis fixed,0.2585,58.57,0.9715
+HSJ / Angle detached,0.8740,62.08,0.9906
+HSJ / Random-rotation placebo,0.3375,32.45,0.9741

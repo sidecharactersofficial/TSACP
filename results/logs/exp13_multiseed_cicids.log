@@ -1,0 +1,75 @@
+
+=== EXP 13: white-box multi-seed (cicids2017, 5 seeds x 2000 samples) ===
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+
+--- seed 42 ---
+  Undefended                         | ASR  41.45% | Q   7.8
+  TASCP (Naive)                      | ASR  43.20% | Q   7.7
+  TASCP (Full Adaptive)              | ASR  46.40% | Q   4.9
+  TASCP (Basis fixed)                | ASR  44.30% | Q   7.5
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+
+--- seed 43 ---
+  Undefended                         | ASR  40.25% | Q   8.3
+  TASCP (Naive)                      | ASR  42.35% | Q   8.1
+  TASCP (Full Adaptive)              | ASR  45.45% | Q   5.0
+  TASCP (Basis fixed)                | ASR  43.20% | Q   8.2
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+
+--- seed 44 ---
+  Undefended                         | ASR  37.90% | Q   8.1
+  TASCP (Naive)                      | ASR  40.15% | Q   7.9
+  TASCP (Full Adaptive)              | ASR  43.10% | Q   5.0
+  TASCP (Basis fixed)                | ASR  40.70% | Q   7.8
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+
+--- seed 45 ---
+  Undefended                         | ASR  40.80% | Q   8.2
+  TASCP (Naive)                      | ASR  42.70% | Q   7.9
+  TASCP (Full Adaptive)              | ASR  46.05% | Q   5.2
+  TASCP (Basis fixed)                | ASR  43.70% | Q   7.9
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+
+--- seed 46 ---
+  Undefended                         | ASR  43.35% | Q   8.0
+  TASCP (Naive)                      | ASR  44.70% | Q   7.6
+  TASCP (Full Adaptive)              | ASR  47.15% | Q   4.7
+  TASCP (Basis fixed)                | ASR  45.50% | Q   7.6
+Undefended                         | pooled  40.75% [39.79, 41.72] | seeds: 41.45, 40.25, 37.90, 40.80, 43.35
+TASCP (Naive)                      | pooled  42.62% [41.65, 43.59] | seeds: 43.20, 42.35, 40.15, 42.70, 44.70
+TASCP (Full Adaptive)              | pooled  45.63% [44.66, 46.61] | seeds: 46.40, 45.45, 43.10, 46.05, 47.15
+TASCP (Basis fixed)                | pooled  43.48% [42.51, 44.45] | seeds: 44.30, 43.20, 40.70, 43.70, 45.50
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+  basis-fixed ref [e0,e1 (canonical)   ] ASR  44.30%
+  basis-fixed ref [random pair 1       ] ASR  37.25%
+  basis-fixed ref [random pair 2       ] ASR  33.85%
+  basis-fixed ref [random pair 3       ] ASR  40.20%
+  basis-fixed ref [random pair 4       ] ASR  41.10%
+  basis-fixed ref [random pair 5       ] ASR  42.20%
+  basis-fixed ref [random pair 6       ] ASR  41.35%
+  basis-fixed ref [random pair 7       ] ASR  46.95%
+Basis-fixed reference robustness: mean 40.90% std 3.77% range [33.85%, 46.95%]

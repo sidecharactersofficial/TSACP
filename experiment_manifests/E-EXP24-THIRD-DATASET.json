@@ -1,0 +1,30 @@
+{
+  "experiment_id": "E-EXP24-THIRD-DATASET",
+  "experiment_number": 24,
+  "claim": "C18",
+  "description": "Third dataset NF-ToN-IoT-v2: mechanism survival on a different feature schema / class distribution.",
+  "datasets": [
+    {
+      "name": "NF-ToN-IoT-v2",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/ton_iot/ton_iot_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "feature_count": 43,
+    "train_epochs": 5,
+    "train_split": 0.8,
+    "architecture": "2x64 MLP"
+  },
+  "expected_output": "experiments/exp24_ton_iot_transfer/run.py; data/ton_iot/exp24_summary.md; results/tables/*_ton_iot.csv",
+  "expected_properties": {
+    "test_accuracy": 0.9819,
+    "test_f1": 0.986,
+    "exp19_dasr_tascp_pp": 4.8,
+    "exp23_nu_allow": 0.185
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp24_ton_iot_transfer/run.py (delegates to exp19/20/21/23 on ton_iot)",
+  "git_commit": "270807a",
+  "note": "Driver runs the transfer audits on ton_iot; --prepare/--train call data/ton_iot scripts."
+}

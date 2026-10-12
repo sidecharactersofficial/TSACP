@@ -1,0 +1,44 @@
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+
+=== EXP 12: HSJ amplification disambiguation (cicids2017, 2000 samples) ===
+
+--- HSJ / Undefended (control) ---
+ASR: 15.05% | Mean Q to success: 56.1 | Mean L2: 0.6424 | Total Q: 2014000
+  trigger fired on 0.00% of all queries
+
+--- HSJ / Delta-theta=0 (control) ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 15.05% | Mean Q to success: 56.1 | Mean L2: 0.6424 | Total Q: 2014000
+  trigger fired on 0.00% of all queries
+
+--- HSJ / TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 87.35%
+ASR: 87.40% | Mean Q to success: 62.1 | Mean L2: 1.0592 | Total Q: 2041000
+  trigger fired on 99.06% of all queries
+
+--- HSJ / Basis fixed ---
+Rotation triggered (final query, mean over chunks): 25.80%
+ASR: 25.85% | Mean Q to success: 58.6 | Mean L2: 0.6533 | Total Q: 2023000
+  trigger fired on 97.15% of all queries
+
+--- HSJ / Angle detached ---
+Rotation triggered (final query, mean over chunks): 87.35%
+ASR: 87.40% | Mean Q to success: 62.1 | Mean L2: 1.0592 | Total Q: 2041000
+  trigger fired on 99.06% of all queries
+
+--- HSJ / Random-rotation placebo ---
+Rotation triggered (final query, mean over chunks): 34.55%
+ASR: 33.75% | Mean Q to success: 32.4 | Mean L2: 0.3581 | Total Q: 2035000
+  trigger fired on 97.41% of all queries
+
+=== EXP 12 SUMMARY (HSJ on cicids2017) ===
+HSJ / Undefended (control)             | ASR  15.05% | fire   0.0%
+HSJ / Delta-theta=0 (control)          | ASR  15.05% | fire   0.0%
+HSJ / TASCP (Naive)                    | ASR  87.40% | fire  99.1%
+HSJ / Basis fixed                      | ASR  25.85% | fire  97.1%
+HSJ / Angle detached                   | ASR  87.40% | fire  99.1%
+HSJ / Random-rotation placebo          | ASR  33.75% | fire  97.4%

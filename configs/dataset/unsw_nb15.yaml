@@ -1,0 +1,5 @@
+dataset: "unsw_nb15"
+path: "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+d_feature: 43  # Dimensionality d=43. Note: The paper originally states d=49, but 6 columns
+  # (4 IP/Port 5-tuple keys + 2 label columns) are explicitly dropped during preprocessing
+  # to form session groupings and prevent overfitting.

@@ -1,0 +1,59 @@
+{
+  "dataset": "ton_iot",
+  "n_samples": 100,
+  "defenses": {
+    "tascp": {
+      "defense": "tascp",
+      "coupling_C_norm": 21057900.0,
+      "coupling_firing_frac": 1.0,
+      "stat_nu_session": 0.28297682709447414,
+      "stat_nu_allow": 0.18486590038314177,
+      "stat_n_adv0": 87,
+      "stat_nu_final": 0.31550800800323486,
+      "stat_alert_rate": 0.5762032085561497,
+      "evasion": {
+        "nes_independent": 0.029999999329447746,
+        "nes_antithetic_jitter": 0.12999999523162842,
+        "square": 0.699999988079071,
+        "random_search": 0.5799999833106995
+      }
+    },
+    "blacklight_sim": {
+      "defense": "blacklight_sim",
+      "coupling_C_norm": null,
+      "coupling_firing_frac": null,
+      "stat_nu_session": 0.35650623885918004,
+      "stat_nu_allow": 0.0,
+      "stat_n_adv0": 87,
+      "stat_nu_final": 0.5347593426704407,
+      "stat_alert_rate": 0.82174688057041,
+      "evasion": {
+        "nes_independent": 0.0,
+        "nes_antithetic_jitter": 0.0,
+        "square": 0.0,
+        "random_search": 0.0
+      }
+    },
+    "rate_limit": {
+      "defense": "rate_limit",
+      "coupling_C_norm": null,
+      "coupling_firing_frac": null,
+      "stat_nu_session": 0.0,
+      "stat_nu_allow": 0.0,
+      "stat_n_adv0": 87,
+      "stat_nu_final": 0.0,
+      "stat_alert_rate": 0.46524064171123,
+      "evasion": {
+        "nes_independent": 0.0,
+        "nes_antithetic_jitter": 0.0,
+        "square": 0.0,
+        "random_search": 0.0
+      }
+    }
+  },
+  "benign_fp": {
+    "tascp": 0.0,
+    "blacklight_sim": 1.0,
+    "rate_limit": 0.0
+  }
+}

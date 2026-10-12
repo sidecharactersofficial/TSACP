@@ -1,0 +1,29 @@
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 500 points for attack
+
+--- family variant: tascp ---
+  naive  82.80% | adaptive  67.80% | fixed-state  57.40% | C 73016080.0000 | nu_session  5.73% | nu_final  6.80%
+
+--- family variant: tscale ---
+  naive  54.00% | adaptive  62.20% | fixed-state  57.40% | C 1.3563 | nu_session  0.18% | nu_final  0.20%
+
+--- family variant: tshift ---
+  naive 100.00% | adaptive  99.80% | fixed-state  57.40% | C 3.9993 | nu_session 10.42% | nu_final 12.80%
+
+--- family variant: tshear ---
+  naive  37.40% | adaptive   8.60% | fixed-state  57.40% | C 4828766.0000 | nu_session  0.02% | nu_final  0.00%
+
+--- family variant: tnoise ---
+  naive  56.60% | adaptive  58.20% | fixed-state  57.40% | C 0.3463 | nu_session  0.20% | nu_final  0.20%
+
+=== EXP 19 SUMMARY ===
+variants with adaptive_delta > 2pp over fixed-state: 3/5
+variants with nu_session > 1%: 2/5
+  tascp    | dASR +10.40pp | C 73016080.000 | nu  5.73%
+  tscale   | dASR  +4.80pp | C 1.356 | nu  0.18%
+  tshift   | dASR +42.40pp | C 3.999 | nu 10.42%
+  tshear   | dASR -48.80pp | C 4828766.000 | nu  0.02%
+  tnoise   | dASR  +0.80pp | C 0.346 | nu  0.20%

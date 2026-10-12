@@ -1,0 +1,24 @@
+{
+  "experiment_id": "E-EXP03-QUERY-BUDGET",
+  "experiment_number": 3,
+  "claim": "C3",
+  "description": "Query-budget scaling of the black-box attacker (Proposition 1).",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "budget": "sweep"
+  },
+  "expected_output": "none (placeholder runner only)",
+  "expected_properties": {
+    "status": "not implemented"
+  },
+  "reproducibility_level": "NR",
+  "script": "experiments/exp3_query_budget/run.py (placeholder)",
+  "git_commit": "270807a",
+  "note": "Placeholder: no implementation and no archived output in this artifact; run.py exits code 2. See doc/OPEN_SCIENCE.md."
+}

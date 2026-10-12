@@ -1,0 +1,21 @@
+nohup: ignoring input
+Loading dataset...
+
+--- Running Undefended ---
+--- Running TASCP (Ablation 2: Basis) ---
+
+Undefended ASR:  1.40%
+Basis-fixed ASR: 1.15%
+WARNING: ASR does not match the originally reported 1.05%! Setup differs.
+
+Top 5 successful indices: [173, 205, 266, 303, 393]
+
+Bit-for-bit comparison for top 5 successes:
+Sample  173 | ||x_t_undefended - x_t_basisfixed||_2 = 1.171136e-01 | Rotation triggered? True (max dTheta=1.5708)
+Sample  205 | ||x_t_undefended - x_t_basisfixed||_2 = 2.832246e-01 | Rotation triggered? True (max dTheta=1.4447)
+Sample  266 | ||x_t_undefended - x_t_basisfixed||_2 = 4.275225e-01 | Rotation triggered? True (max dTheta=1.4736)
+Sample  303 | ||x_t_undefended - x_t_basisfixed||_2 = 2.741490e-01 | Rotation triggered? True (max dTheta=1.3655)
+Sample  393 | ||x_t_undefended - x_t_basisfixed||_2 = 1.254296e-01 | Rotation triggered? True (max dTheta=1.1742)
+
+VERDICT:
+tensors differ despite identical binary outcome (coincidental success-set overlap, not a mechanical no-op — safe to report as before)

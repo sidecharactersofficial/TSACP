@@ -1,0 +1,29 @@
+Loading ton_iot dataset (92 MB)...
+Benign samples (streamed): 1218993
+Loading trained NIDS classifier...
+Correctly classified benign: 1175602
+Sampled 500 points for attack
+
+--- family variant: tascp ---
+  naive  98.20% | adaptive  91.40% | fixed-state  86.60% | C 40802624.0000 | nu_session 37.02% | nu_final 36.20%
+
+--- family variant: tscale ---
+  naive  83.80% | adaptive  87.00% | fixed-state  86.60% | C 1.9551 | nu_session  8.32% | nu_final  4.80%
+
+--- family variant: tshift ---
+  naive  99.20% | adaptive  97.20% | fixed-state  86.60% | C 3.6549 | nu_session 15.73% | nu_final 15.60%
+
+--- family variant: tshear ---
+  naive  85.40% | adaptive  84.40% | fixed-state  86.60% | C 5504299.0000 | nu_session  8.53% | nu_final  5.40%
+
+--- family variant: tnoise ---
+  naive  86.80% | adaptive  86.60% | fixed-state  86.60% | C 0.3162 | nu_session 16.07% | nu_final 14.60%
+
+=== EXP 19 SUMMARY ===
+variants with adaptive_delta > 2pp over fixed-state: 2/5
+variants with nu_session > 1%: 5/5
+  tascp    | dASR  +4.80pp | C 40802624.000 | nu 37.02%
+  tscale   | dASR  +0.40pp | C 1.955 | nu  8.32%
+  tshift   | dASR +10.60pp | C 3.655 | nu 15.73%
+  tshear   | dASR  -2.20pp | C 5504299.000 | nu  8.53%
+  tnoise   | dASR  +0.00pp | C 0.316 | nu 16.07%

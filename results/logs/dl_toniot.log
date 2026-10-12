@@ -1,0 +1,5 @@
+download exit: 0
+total 519472
+drwxr-xr-x 2 root root      4096 Oct  8 16:57 .
+drwxr-xr-x 5 root root      4096 Oct  8 16:57 ..
+-rw-r--r-- 1 root root 531923548 Oct  8 16:58 NF-ToN-IoT-v2-test.csv

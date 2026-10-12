@@ -1,0 +1,216 @@
+{
+  "conditions": {
+    "TASCP (Naive)": {
+      "experiment_id": "exp8",
+      "dataset": "unsw_nb15",
+      "defense": "TASCP (Naive)",
+      "attacker": "stateful_pgd_bpda",
+      "seed": 42,
+      "config": {
+        "epsilon": 0.1,
+        "alpha": 0.01,
+        "iterations": 20,
+        "norm": "l2",
+        "name": "pgd"
+      },
+      "config_sha256": "168ee4814224fed4063a0a76936b65958fb6b8dab9ef0050811a7a132d74769a",
+      "checkpoint_sha256": "922ee791180e893f4a37771495ca6f75adbbd2ea62adad67c1b75490c0f3a5d3",
+      "dataset_sha256": "080eb491e8240ec2d61f0f43c7fea35fc4dc99b0799931315e7bfe1adf917a43",
+      "n_evaluated": 2000,
+      "n_successful": 459,
+      "asr": 0.2295,
+      "metrics": {
+        "mean_queries_to_success": 10.180828094482422,
+        "mean_l2_distance": 0.09949462860822678
+      },
+      "git_commit": "270807a",
+      "environment": {
+        "python": "3.14.6",
+        "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+        "torch": "2.9.1",
+        "numpy": "2.4.0",
+        "pandas": "2.3.3",
+        "pyarrow": "24.0.0",
+        "scikit-learn": "1.8.0",
+        "xgboost": "3.3.0",
+        "scipy": "1.16.3",
+        "joblib": "1.5.3",
+        "matplotlib": "3.10.8",
+        "seaborn": "0.13.2"
+      },
+      "checkpoint_path": "src/tascp_eval/models/weights/unsw_nb15_nids.pth",
+      "dataset_path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    },
+    "TASCP (Full Adaptive)": {
+      "experiment_id": "exp8",
+      "dataset": "unsw_nb15",
+      "defense": "TASCP (Full Adaptive)",
+      "attacker": "stateful_pgd_bpda",
+      "seed": 42,
+      "config": {
+        "epsilon": 0.1,
+        "alpha": 0.01,
+        "iterations": 20,
+        "norm": "l2",
+        "name": "pgd"
+      },
+      "config_sha256": "168ee4814224fed4063a0a76936b65958fb6b8dab9ef0050811a7a132d74769a",
+      "checkpoint_sha256": "922ee791180e893f4a37771495ca6f75adbbd2ea62adad67c1b75490c0f3a5d3",
+      "dataset_sha256": "080eb491e8240ec2d61f0f43c7fea35fc4dc99b0799931315e7bfe1adf917a43",
+      "n_evaluated": 2000,
+      "n_successful": 1072,
+      "asr": 0.536,
+      "metrics": {
+        "mean_queries_to_success": 4.2639923095703125,
+        "mean_l2_distance": 0.05820263549685478
+      },
+      "git_commit": "270807a",
+      "environment": {
+        "python": "3.14.6",
+        "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+        "torch": "2.9.1",
+        "numpy": "2.4.0",
+        "pandas": "2.3.3",
+        "pyarrow": "24.0.0",
+        "scikit-learn": "1.8.0",
+        "xgboost": "3.3.0",
+        "scipy": "1.16.3",
+        "joblib": "1.5.3",
+        "matplotlib": "3.10.8",
+        "seaborn": "0.13.2"
+      },
+      "checkpoint_path": "src/tascp_eval/models/weights/unsw_nb15_nids.pth",
+      "dataset_path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    },
+    "TASCP (Ablation 1: Grad Mag)": {
+      "experiment_id": "exp8",
+      "dataset": "unsw_nb15",
+      "defense": "TASCP (Ablation 1: Grad Mag)",
+      "attacker": "stateful_pgd_bpda",
+      "seed": 42,
+      "config": {
+        "epsilon": 0.1,
+        "alpha": 0.01,
+        "iterations": 20,
+        "norm": "l2",
+        "name": "pgd"
+      },
+      "config_sha256": "168ee4814224fed4063a0a76936b65958fb6b8dab9ef0050811a7a132d74769a",
+      "checkpoint_sha256": "922ee791180e893f4a37771495ca6f75adbbd2ea62adad67c1b75490c0f3a5d3",
+      "dataset_sha256": "080eb491e8240ec2d61f0f43c7fea35fc4dc99b0799931315e7bfe1adf917a43",
+      "n_evaluated": 2000,
+      "n_successful": 1232,
+      "asr": 0.616,
+      "metrics": {
+        "mean_queries_to_success": 5.5625,
+        "mean_l2_distance": 0.06455905735492706
+      },
+      "git_commit": "270807a",
+      "environment": {
+        "python": "3.14.6",
+        "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+        "torch": "2.9.1",
+        "numpy": "2.4.0",
+        "pandas": "2.3.3",
+        "pyarrow": "24.0.0",
+        "scikit-learn": "1.8.0",
+        "xgboost": "3.3.0",
+        "scipy": "1.16.3",
+        "joblib": "1.5.3",
+        "matplotlib": "3.10.8",
+        "seaborn": "0.13.2"
+      },
+      "checkpoint_path": "src/tascp_eval/models/weights/unsw_nb15_nids.pth",
+      "dataset_path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    },
+    "TASCP (Ablation 2: Basis)": {
+      "experiment_id": "exp8",
+      "dataset": "unsw_nb15",
+      "defense": "TASCP (Ablation 2: Basis)",
+      "attacker": "stateful_pgd_bpda",
+      "seed": 42,
+      "config": {
+        "epsilon": 0.1,
+        "alpha": 0.01,
+        "iterations": 20,
+        "norm": "l2",
+        "name": "pgd"
+      },
+      "config_sha256": "168ee4814224fed4063a0a76936b65958fb6b8dab9ef0050811a7a132d74769a",
+      "checkpoint_sha256": "922ee791180e893f4a37771495ca6f75adbbd2ea62adad67c1b75490c0f3a5d3",
+      "dataset_sha256": "080eb491e8240ec2d61f0f43c7fea35fc4dc99b0799931315e7bfe1adf917a43",
+      "n_evaluated": 2000,
+      "n_successful": 206,
+      "asr": 0.103,
+      "metrics": {
+        "mean_queries_to_success": 14.616504669189453,
+        "mean_l2_distance": 0.09944476187229156
+      },
+      "git_commit": "270807a",
+      "environment": {
+        "python": "3.14.6",
+        "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+        "torch": "2.9.1",
+        "numpy": "2.4.0",
+        "pandas": "2.3.3",
+        "pyarrow": "24.0.0",
+        "scikit-learn": "1.8.0",
+        "xgboost": "3.3.0",
+        "scipy": "1.16.3",
+        "joblib": "1.5.3",
+        "matplotlib": "3.10.8",
+        "seaborn": "0.13.2"
+      },
+      "checkpoint_path": "src/tascp_eval/models/weights/unsw_nb15_nids.pth",
+      "dataset_path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    },
+    "TASCP (Ablation 3: Proj Only)": {
+      "experiment_id": "exp8",
+      "dataset": "unsw_nb15",
+      "defense": "TASCP (Ablation 3: Proj Only)",
+      "attacker": "stateful_pgd_bpda",
+      "seed": 42,
+      "config": {
+        "epsilon": 0.1,
+        "alpha": 0.01,
+        "iterations": 20,
+        "norm": "l2",
+        "name": "pgd"
+      },
+      "config_sha256": "168ee4814224fed4063a0a76936b65958fb6b8dab9ef0050811a7a132d74769a",
+      "checkpoint_sha256": "922ee791180e893f4a37771495ca6f75adbbd2ea62adad67c1b75490c0f3a5d3",
+      "dataset_sha256": "080eb491e8240ec2d61f0f43c7fea35fc4dc99b0799931315e7bfe1adf917a43",
+      "n_evaluated": 2000,
+      "n_successful": 1914,
+      "asr": 0.957,
+      "metrics": {
+        "mean_queries_to_success": 6.112852573394775,
+        "mean_l2_distance": 0.09070421755313873
+      },
+      "git_commit": "270807a",
+      "environment": {
+        "python": "3.14.6",
+        "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+        "torch": "2.9.1",
+        "numpy": "2.4.0",
+        "pandas": "2.3.3",
+        "pyarrow": "24.0.0",
+        "scikit-learn": "1.8.0",
+        "xgboost": "3.3.0",
+        "scipy": "1.16.3",
+        "joblib": "1.5.3",
+        "matplotlib": "3.10.8",
+        "seaborn": "0.13.2"
+      },
+      "checkpoint_path": "src/tascp_eval/models/weights/unsw_nb15_nids.pth",
+      "dataset_path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  },
+  "significance": {
+    "undefended_reference_asr": 0.105,
+    "ablation2_basis_asr": 0.103,
+    "z_statistic": -0.20718548254118638,
+    "p_value": 0.8358650045906509,
+    "significant_at_0.05": false
+  }
+}

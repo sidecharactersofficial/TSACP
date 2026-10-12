@@ -1,0 +1,68 @@
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 4560 points for attack
+
+=== EXP 11: detector robustness (unsw_nb15, 2000 attack samples) ===
+Benign boundary shard: 2000 flows, |margin| in [0.0147, 13.0877]
+
+=== EXP 11 part A: adaptive evaders vs density detector (unsw_nb15) ===
+NES baseline (no evasion)              | verified ASR   0.00% | flag rate  97.8% | detected True
+NES + query jitter (0.12)              | verified ASR   0.00% | flag rate  78.1% | detected True
+NES + multi-identity (5 ids)           | verified ASR   0.00% | flag rate   1.2% | detected True
+NES + multi-identity (10 ids)          | verified ASR   0.00% | flag rate   1.3% | detected True
+HSJ baseline (no evasion)              | verified ASR   0.00% | flag rate  91.1% | detected True
+HSJ + min-distance (0.15)              | verified ASR   0.00% | flag rate  90.4% | detected True
+
+=== EXP 11 part B: detector sweep (tau x k) + boundary FPR ===
+  attack streams subsampled to 256 for the 25-point grid x 2 attacks
+  tau=0.05 k=3   | benign-boundary FPR   1.35% | NES flag   5.08% | HSJ flag  88.31%
+  tau=0.05 k=5   | benign-boundary FPR   0.00% | NES flag   4.73% | HSJ flag  84.46%
+  tau=0.05 k=8   | benign-boundary FPR   0.00% | NES flag   4.42% | HSJ flag  81.64%
+  tau=0.05 k=12  | benign-boundary FPR   0.00% | NES flag   2.76% | HSJ flag  79.99%
+  tau=0.05 k=20  | benign-boundary FPR   0.00% | NES flag   0.00% | HSJ flag  76.54%
+  tau=0.1  k=3   | benign-boundary FPR  15.25% | NES flag  98.53% | HSJ flag  93.15%
+  tau=0.1  k=5   | benign-boundary FPR   5.30% | NES flag  97.73% | HSJ flag  91.44%
+  tau=0.1  k=8   | benign-boundary FPR   0.10% | NES flag  96.83% | HSJ flag  90.05%
+  tau=0.1  k=12  | benign-boundary FPR   0.00% | NES flag  95.24% | HSJ flag  88.74%
+  tau=0.1  k=20  | benign-boundary FPR   0.00% | NES flag  92.06% | HSJ flag  86.45%
+  tau=0.2  k=3   | benign-boundary FPR  19.75% | NES flag  98.81% | HSJ flag  95.31%
+  tau=0.2  k=5   | benign-boundary FPR   8.75% | NES flag  98.02% | HSJ flag  93.60%
+  tau=0.2  k=8   | benign-boundary FPR   0.90% | NES flag  96.83% | HSJ flag  92.36%
+  tau=0.2  k=12  | benign-boundary FPR   0.00% | NES flag  95.24% | HSJ flag  91.42%
+  tau=0.2  k=20  | benign-boundary FPR   0.00% | NES flag  92.06% | HSJ flag  89.95%
+  tau=0.3  k=3   | benign-boundary FPR  28.05% | NES flag  98.81% | HSJ flag  96.58%
+  tau=0.3  k=5   | benign-boundary FPR  15.05% | NES flag  98.02% | HSJ flag  94.69%
+  tau=0.3  k=8   | benign-boundary FPR   2.85% | NES flag  96.83% | HSJ flag  93.45%
+  tau=0.3  k=12  | benign-boundary FPR   0.05% | NES flag  95.24% | HSJ flag  92.57%
+  tau=0.3  k=20  | benign-boundary FPR   0.00% | NES flag  92.06% | HSJ flag  90.77%
+  tau=0.5  k=3   | benign-boundary FPR  34.25% | NES flag  98.81% | HSJ flag  97.78%
+  tau=0.5  k=5   | benign-boundary FPR  18.95% | NES flag  98.02% | HSJ flag  96.47%
+  tau=0.5  k=8   | benign-boundary FPR   5.05% | NES flag  96.83% | HSJ flag  95.43%
+  tau=0.5  k=12  | benign-boundary FPR   0.15% | NES flag  95.24% | HSJ flag  94.67%
+  tau=0.5  k=20  | benign-boundary FPR   0.00% | NES flag  92.06% | HSJ flag  92.94%
+  ROC (NES, tau=0.1): AUC 0.9931 | TPR@FPR=1%: 96.9%
+  ROC (HSJ, tau=0.1): AUC 0.9612 | TPR@FPR=1%: 90.2%
+
+=== EXP 11 part C: quantize-then-hash vs L2 proxy ===
+  recorded 504000 NES queries for replay
+  recorded 2050000 HSJ queries for replay
+  NES / hash best [q=0.1,r=20] flag rate  97.39%
+  HSJ / hash best [q=0.1,r=20] flag rate  84.31%
+  recorded 504000 NES queries for replay
+  recorded 2050000 HSJ queries for replay
+  NES / L2 proxy     flag rate   0.85%
+  HSJ / L2 proxy     flag rate   0.05%
+  Benign control (random benign) / hash worst-case over grid: 87.50%
+  Benign control (boundary benign) / hash worst-case over grid: 87.50%
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/workspace/workspace/03-Code/Projects/Legacy/Project Archimedes/experiments/exp11_detector_robustness/run.py", line 649, in <module>
+    run(dataset=ds)
+    ~~~^^^^^^^^^^^^
+  File "/root/workspace/workspace/03-Code/Projects/Legacy/Project Archimedes/experiments/exp11_detector_robustness/run.py", line 625, in run
+    tau, k = key.split(", k=")
+    ^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)

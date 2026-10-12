@@ -1,0 +1,17 @@
++ python -u -m experiments.exp19_trajectory_family.run unsw_nb15
++ echo 'exp19 exit: 0'
+exp19 exit: 0
++ python -u -m experiments.exp20_coupling_audit.run unsw_nb15
++ echo 'exp20 exit: 0'
+exp20 exit: 0
++ python -u -m experiments.exp21_trigger_matrix.run unsw_nb15
++ echo 'exp21 exit: 1'
+exp21 exit: 1
++ python -u -m experiments.exp23_defense_audit.run unsw_nb15
++ echo 'exp23 exit: 0'
+exp23 exit: 0
++ python -u -m experiments.exp22_arch_split.run unsw_nb15
++ echo 'exp22 exit: 0'
+exp22 exit: 0
++ echo 'STAGE1 DONE'
+STAGE1 DONE

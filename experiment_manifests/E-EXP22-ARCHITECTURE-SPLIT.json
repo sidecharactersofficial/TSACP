@@ -1,0 +1,28 @@
+{
+  "experiment_id": "E-EXP22-ARCHITECTURE-SPLIT",
+  "experiment_number": 22,
+  "claim": "C13",
+  "description": "Architecture split: MLP vs XGBoost (surrogate-gradient) behaviour.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "architectures": [
+      "MLP",
+      "XGBoost"
+    ]
+  },
+  "expected_output": "results/logs/exp22_*/metrics_*.json, results/tables/exp22_*",
+  "expected_properties": {
+    "xgboost_undefended_asr": 0.85,
+    "mlp_mechanism": "replicates",
+    "xgboost_mechanism": "does not replicate"
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp22_arch_split/run.py",
+  "git_commit": "270807a"
+}

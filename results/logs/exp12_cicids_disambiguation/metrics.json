@@ -1,0 +1,49 @@
+{
+  "HSJ / Undefended (control)": {
+    "asr": 0.15049999952316284,
+    "mean_queries_to_success": 56.11960220336914,
+    "mean_l2_distance": 0.642370343208313,
+    "total_queries": 2014000,
+    "trigger_fire_frac_all_queries": 0.0
+  },
+  "HSJ / Delta-theta=0 (control)": {
+    "asr": 0.15049999952316284,
+    "mean_queries_to_success": 56.11960220336914,
+    "mean_l2_distance": 0.642370343208313,
+    "total_queries": 2014000,
+    "rotation_triggered_frac": 0.0,
+    "trigger_fire_frac_all_queries": 0.0
+  },
+  "HSJ / TASCP (Naive)": {
+    "asr": 0.8740000128746033,
+    "mean_queries_to_success": 62.07666015625,
+    "mean_l2_distance": 1.0592024326324463,
+    "total_queries": 2041000,
+    "rotation_triggered_frac": 0.8735000044107437,
+    "trigger_fire_frac_all_queries": 0.9906194560156825
+  },
+  "HSJ / Basis fixed": {
+    "asr": 0.25850000977516174,
+    "mean_queries_to_success": 58.57059860229492,
+    "mean_l2_distance": 0.6533164381980896,
+    "total_queries": 2023000,
+    "rotation_triggered_frac": 0.2579999975860119,
+    "trigger_fire_frac_all_queries": 0.9714872682323856
+  },
+  "HSJ / Angle detached": {
+    "asr": 0.8740000128746033,
+    "mean_queries_to_success": 62.07666015625,
+    "mean_l2_distance": 1.0592024326324463,
+    "total_queries": 2041000,
+    "rotation_triggered_frac": 0.8735000044107437,
+    "trigger_fire_frac_all_queries": 0.9906194560156825
+  },
+  "HSJ / Random-rotation placebo": {
+    "asr": 0.3375000059604645,
+    "mean_queries_to_success": 32.448890686035156,
+    "mean_l2_distance": 0.3581426739692688,
+    "total_queries": 2035000,
+    "rotation_triggered_frac": 0.34549999237060547,
+    "trigger_fire_frac_all_queries": 0.9740977886977887
+  }
+}

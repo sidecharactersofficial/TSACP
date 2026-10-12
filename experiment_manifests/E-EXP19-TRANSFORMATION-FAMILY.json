@@ -1,0 +1,40 @@
+{
+  "experiment_id": "E-EXP19-TRANSFORMATION-FAMILY",
+  "experiment_number": 19,
+  "claim": "C11",
+  "description": "Transformation-family sweep (tascp, tscale, tshift, tshear, tnoise) adaptive-vs-fixed-state dASR.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    },
+    {
+      "name": "CICIDS2017",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/cicids2017/cicids2017_processed.parquet"
+    },
+    {
+      "name": "NF-ToN-IoT-v2",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/ton_iot/ton_iot_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "variants": [
+      "tascp",
+      "tscale",
+      "tshift",
+      "tshear",
+      "tnoise"
+    ]
+  },
+  "expected_output": "results/logs/exp19_*/metrics_*.json, results/tables/exp19_*",
+  "expected_properties": {
+    "nu_session_gt_1pct": "5/5 variants",
+    "tascp_nu_session": 0.37
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp19_trajectory_family/run.py",
+  "git_commit": "270807a"
+}

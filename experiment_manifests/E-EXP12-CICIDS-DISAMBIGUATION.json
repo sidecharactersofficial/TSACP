@@ -1,0 +1,28 @@
+{
+  "experiment_id": "E-EXP12-CICIDS-DISAMBIGUATION",
+  "experiment_number": 12,
+  "claim": "C5",
+  "description": "CICIDS2017 disambiguation controls (wrapper, basis-fixed, angle-detached, random-plane placebo).",
+  "datasets": [
+    {
+      "name": "CICIDS2017",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/cicids2017/cicids2017_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "queries_per_condition": 2000000
+  },
+  "expected_output": "results/logs/exp12_cicids_disambiguation/metrics.json, results/tables/exp12_hsj_disambiguation_cicids2017.csv",
+  "expected_properties": {
+    "undefended_asr": 15.05,
+    "delta_theta_zero_asr": 15.05,
+    "naive_asr": 87.4,
+    "basis_fixed_asr": 25.85,
+    "angle_detached_asr": 87.4,
+    "placebo_asr": 33.75
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp12_cicids_disambiguation/run.py",
+  "git_commit": "270807a"
+}

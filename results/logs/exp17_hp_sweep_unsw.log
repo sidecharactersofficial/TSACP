@@ -1,0 +1,37 @@
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 500 points for attack
+
+=== EXP 17: hyperparameter sweep (unsw_nb15, 500 samples) ===
+Undefended reference ASR: 9.80%
+  g=10.0,tau=0.0,w=3         | adaptive   1.40% | basis-fixed   9.80% | undef   9.80%
+  g=10.0,tau=0.0,w=5         | adaptive   1.60% | basis-fixed   9.80% | undef   9.80%
+  g=10.0,tau=0.0,w=10        | adaptive   2.80% | basis-fixed   9.80% | undef   9.80%
+  g=10.0,tau=0.01,w=3        | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=10.0,tau=0.01,w=5        | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=10.0,tau=0.01,w=10       | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=10.0,tau=0.05,w=3        | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=10.0,tau=0.05,w=5        | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=10.0,tau=0.05,w=10       | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=50.0,tau=0.0,w=3         | adaptive  57.80% | basis-fixed   9.60% | undef   9.80%
+  g=50.0,tau=0.0,w=5         | adaptive  54.80% | basis-fixed   9.40% | undef   9.80%
+  g=50.0,tau=0.0,w=10        | adaptive  53.20% | basis-fixed   8.80% | undef   9.80%
+  g=50.0,tau=0.01,w=3        | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=50.0,tau=0.01,w=5        | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=50.0,tau=0.01,w=10       | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=50.0,tau=0.05,w=3        | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=50.0,tau=0.05,w=5        | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=50.0,tau=0.05,w=10       | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=100.0,tau=0.0,w=3        | adaptive  87.40% | basis-fixed   9.60% | undef   9.80%
+  g=100.0,tau=0.0,w=5        | adaptive  85.20% | basis-fixed   9.20% | undef   9.80%
+  g=100.0,tau=0.0,w=10       | adaptive  84.60% | basis-fixed   0.40% | undef   9.80%
+  g=100.0,tau=0.01,w=3       | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=100.0,tau=0.01,w=5       | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=100.0,tau=0.01,w=10      | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=100.0,tau=0.05,w=3       | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=100.0,tau=0.05,w=5       | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+  g=100.0,tau=0.05,w=10      | adaptive   9.80% | basis-fixed   9.80% | undef   9.80%
+
+Grid: adaptive beats undefended on 6/27 points; basis-fixed within 2pp of baseline on 26/27

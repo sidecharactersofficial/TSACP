@@ -1,0 +1,28 @@
+{
+  "experiment_id": "E-EXP04-DEFENSE-COMPARISON",
+  "experiment_number": 4,
+  "claim": "C16",
+  "description": "Head-to-head comparison of TASCP against Adversarial Training (AT), Randomized Smoothing (RS) and static DACM.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "baselines": [
+      "AT",
+      "RS",
+      "DACM"
+    ]
+  },
+  "expected_output": "none (AT/RS checkpoints not shipped); DACM/TASCP vs undefended covered by exp5",
+  "expected_properties": {
+    "status": "not reproducible"
+  },
+  "reproducibility_level": "NR",
+  "script": "experiments/exp4_defense_comparison/run.py (placeholder)",
+  "git_commit": "270807a",
+  "note": "AT/RS baselines require checkpoints that are not shipped; the exp5 record covers DACM/TASCP/undefended. See doc/OPEN_SCIENCE.md."
+}

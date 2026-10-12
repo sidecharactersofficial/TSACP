@@ -1,0 +1,36 @@
+{
+  "experiment_id": "E-EXP11-DETECTOR-ROBUSTNESS",
+  "experiment_number": 11,
+  "claim": "C6",
+  "description": "Detection of adaptive evaders (query jitter, multi-identity) and detector sweep.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    },
+    {
+      "name": "CICIDS2017",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/cicids2017/cicids2017_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "evaders": [
+      "query jitter",
+      "multi-identity"
+    ],
+    "tau": 0.1
+  },
+  "expected_output": "results/logs/exp11_detector_robustness/metrics.json, results/tables/exp11_*",
+  "expected_properties": {
+    "nes_baseline_flag_rate": 0.978,
+    "jitter_flag_rate": 0.781,
+    "multi_identity_5_flag_rate": 0.012,
+    "multi_identity_10_flag_rate": 0.013
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp11_detector_robustness/run.py",
+  "git_commit": "270807a",
+  "note": "metrics.json holds the latest (CICIDS2017) run; UNSW numbers preserved from crash log. See summary caveat."
+}

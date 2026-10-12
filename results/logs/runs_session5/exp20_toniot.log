@@ -1,0 +1,132 @@
+Loading ton_iot dataset (92 MB)...
+Benign samples (streamed): 1218993
+Loading trained NIDS classifier...
+Correctly classified benign: 1175602
+Sampled 500 points for attack
+
+=== cell state_fn=momentum x transform=tascp ===
+  C_raw 4.08e+07 | C_norm 26364700.0000 | adaptive  91.40% | fixed  86.60% | dASR  +4.80pp | nu 37.02%
+
+=== cell state_fn=momentum x transform=tscale ===
+  C_raw 1.955 | C_norm 16.5437 | adaptive  87.00% | fixed  86.60% | dASR  +0.40pp | nu  8.32%
+
+=== cell state_fn=momentum x transform=tshift ===
+  C_raw 3.655 | C_norm 7.3098 | adaptive  97.20% | fixed  86.60% | dASR +10.60pp | nu 15.73%
+
+=== cell state_fn=momentum x transform=tshear ===
+  C_raw 5.504e+06 | C_norm 17631728.0000 | adaptive  84.40% | fixed  86.60% | dASR  -2.20pp | nu  8.53%
+
+=== cell state_fn=momentum x transform=tnoise ===
+  C_raw 0.3162 | C_norm 2.8841 | adaptive  86.60% | fixed  86.60% | dASR  +0.00pp | nu 16.07%
+
+=== cell state_fn=cosine x transform=tascp ===
+  C_raw 4.08e+07 | C_norm 26364700.0000 | adaptive  98.40% | fixed  86.60% | dASR +11.80pp | nu 34.65%
+
+=== cell state_fn=cosine x transform=tscale ===
+  C_raw 1.955 | C_norm 16.5437 | adaptive  86.80% | fixed  86.60% | dASR  +0.20pp | nu  7.43%
+
+=== cell state_fn=cosine x transform=tshift ===
+  C_raw 3.655 | C_norm 7.3098 | adaptive 100.00% | fixed  86.60% | dASR +13.40pp | nu 14.40%
+
+=== cell state_fn=cosine x transform=tshear ===
+  C_raw 5.504e+06 | C_norm 17631728.0000 | adaptive 100.00% | fixed  86.60% | dASR +13.40pp | nu  7.78%
+
+=== cell state_fn=cosine x transform=tnoise ===
+  C_raw 0.1641 | C_norm 0.1643 | adaptive 100.00% | fixed  86.60% | dASR +13.40pp | nu 54.95%
+
+=== cell state_fn=disp_mag x transform=tascp ===
+  C_raw 4.08e+07 | C_norm 26364700.0000 | adaptive  92.80% | fixed  86.60% | dASR  +6.20pp | nu 37.02%
+
+=== cell state_fn=disp_mag x transform=tscale ===
+  C_raw 1.955 | C_norm 16.5437 | adaptive  87.00% | fixed  86.60% | dASR  +0.40pp | nu  9.13%
+
+=== cell state_fn=disp_mag x transform=tshift ===
+  C_raw 3.655 | C_norm 7.3098 | adaptive  97.40% | fixed  86.60% | dASR +10.80pp | nu 16.97%
+
+=== cell state_fn=disp_mag x transform=tshear ===
+  C_raw 5.504e+06 | C_norm 17631728.0000 | adaptive  98.20% | fixed  86.60% | dASR +11.60pp | nu  8.53%
+
+=== cell state_fn=disp_mag x transform=tnoise ===
+  C_raw 0.6321 | C_norm 1.9065 | adaptive  86.60% | fixed  86.60% | dASR  +0.00pp | nu 48.12%
+
+=== cell state_fn=running_mean_dir x transform=tascp ===
+  C_raw 4.539 | C_norm 74397616.0000 | adaptive  98.40% | fixed  86.60% | dASR +11.80pp | nu 24.23%
+
+=== cell state_fn=running_mean_dir x transform=tscale ===
+  C_raw 1.642e-07 | C_norm 26.7946 | adaptive  86.80% | fixed  86.60% | dASR  +0.20pp | nu  4.55%
+
+=== cell state_fn=running_mean_dir x transform=tshift ===
+  C_raw 5.015e-07 | C_norm 13.8388 | adaptive 100.00% | fixed  86.60% | dASR +13.40pp | nu  9.90%
+
+=== cell state_fn=running_mean_dir x transform=tshear ===
+  C_raw 0.4625 | C_norm 15418358.0000 | adaptive 100.00% | fixed  86.60% | dASR +13.40pp | nu  4.68%
+
+=== cell state_fn=running_mean_dir x transform=tnoise ===
+  C_raw 6.412e-09 | C_norm 1.9270 | adaptive 100.00% | fixed  86.60% | dASR +13.40pp | nu 31.05%
+
+=== cell state_fn=ema x transform=tascp ===
+  C_raw 4.08e+07 | C_norm 26364700.0000 | adaptive  95.60% | fixed  86.60% | dASR  +9.00pp | nu 37.02%
+
+=== cell state_fn=ema x transform=tscale ===
+  C_raw 1.955 | C_norm 16.5437 | adaptive  86.80% | fixed  86.60% | dASR  +0.20pp | nu  9.13%
+
+=== cell state_fn=ema x transform=tshift ===
+  C_raw 3.655 | C_norm 7.3098 | adaptive 100.00% | fixed  86.60% | dASR +13.40pp | nu 16.97%
+
+=== cell state_fn=ema x transform=tshear ===
+  C_raw 5.504e+06 | C_norm 17631728.0000 | adaptive  99.40% | fixed  86.60% | dASR +12.80pp | nu  8.53%
+
+=== cell state_fn=ema x transform=tnoise ===
+  C_raw 0.6325 | C_norm 1.3462 | adaptive  86.80% | fixed  86.60% | dASR  +0.20pp | nu 59.42%
+
+=== cell state_fn=curvature x transform=tascp ===
+  C_raw 4.08e+07 | C_norm 26364700.0000 | adaptive  91.80% | fixed  86.60% | dASR  +5.20pp | nu 37.02%
+
+=== cell state_fn=curvature x transform=tscale ===
+  C_raw 1.955 | C_norm 16.5437 | adaptive  87.00% | fixed  86.60% | dASR  +0.40pp | nu  9.13%
+
+=== cell state_fn=curvature x transform=tshift ===
+  C_raw 3.655 | C_norm 7.3098 | adaptive 100.00% | fixed  86.60% | dASR +13.40pp | nu 16.97%
+
+=== cell state_fn=curvature x transform=tshear ===
+  C_raw 5.504e+06 | C_norm 17631728.0000 | adaptive 100.00% | fixed  86.60% | dASR +13.40pp | nu  8.53%
+
+=== cell state_fn=curvature x transform=tnoise ===
+  C_raw 0.2877 | C_norm 0.0956 | adaptive  86.60% | fixed  86.60% | dASR  +0.00pp | nu 69.85%
+
+=== EXP 20 SUMMARY (RQ2 coupling vs adaptive effect) ===
+cells: 30 | open-channel cells: 30
+  spearman_logCnorm_vs_dASR: {'rho': 0.08551099861206742, 'p': 0.6532253195751536}
+  pearson_logCnorm_vs_dASR: {'r': 0.2728439639737639, 'p': 0.14462812366133931}
+
+cells ordered by normalized coupling C_norm:
+  curvature         x tnoise  | C_norm    0.0956 | dASR  +0.00pp | nu 69.85%
+  cosine            x tnoise  | C_norm    0.1643 | dASR +13.40pp | nu 54.95%
+  ema               x tnoise  | C_norm    1.3462 | dASR  +0.20pp | nu 59.42%
+  disp_mag          x tnoise  | C_norm    1.9065 | dASR  +0.00pp | nu 48.12%
+  running_mean_dir  x tnoise  | C_norm    1.9270 | dASR +13.40pp | nu 31.05%
+  momentum          x tnoise  | C_norm    2.8841 | dASR  +0.00pp | nu 16.07%
+  momentum          x tshift  | C_norm    7.3098 | dASR +10.60pp | nu 15.73%
+  cosine            x tshift  | C_norm    7.3098 | dASR +13.40pp | nu 14.40%
+  disp_mag          x tshift  | C_norm    7.3098 | dASR +10.80pp | nu 16.97%
+  ema               x tshift  | C_norm    7.3098 | dASR +13.40pp | nu 16.97%
+  curvature         x tshift  | C_norm    7.3098 | dASR +13.40pp | nu 16.97%
+  running_mean_dir  x tshift  | C_norm   13.8388 | dASR +13.40pp | nu  9.90%
+  momentum          x tscale  | C_norm   16.5437 | dASR  +0.40pp | nu  8.32%
+  cosine            x tscale  | C_norm   16.5437 | dASR  +0.20pp | nu  7.43%
+  disp_mag          x tscale  | C_norm   16.5437 | dASR  +0.40pp | nu  9.13%
+  ema               x tscale  | C_norm   16.5437 | dASR  +0.20pp | nu  9.13%
+  curvature         x tscale  | C_norm   16.5437 | dASR  +0.40pp | nu  9.13%
+  running_mean_dir  x tscale  | C_norm   26.7946 | dASR  +0.20pp | nu  4.55%
+  running_mean_dir  x tshear  | C_norm 15418358.0000 | dASR +13.40pp | nu  4.68%
+  momentum          x tshear  | C_norm 17631728.0000 | dASR  -2.20pp | nu  8.53%
+  cosine            x tshear  | C_norm 17631728.0000 | dASR +13.40pp | nu  7.78%
+  disp_mag          x tshear  | C_norm 17631728.0000 | dASR +11.60pp | nu  8.53%
+  ema               x tshear  | C_norm 17631728.0000 | dASR +12.80pp | nu  8.53%
+  curvature         x tshear  | C_norm 17631728.0000 | dASR +13.40pp | nu  8.53%
+  momentum          x tascp   | C_norm 26364700.0000 | dASR  +4.80pp | nu 37.02%
+  cosine            x tascp   | C_norm 26364700.0000 | dASR +11.80pp | nu 34.65%
+  disp_mag          x tascp   | C_norm 26364700.0000 | dASR  +6.20pp | nu 37.02%
+  ema               x tascp   | C_norm 26364700.0000 | dASR  +9.00pp | nu 37.02%
+  curvature         x tascp   | C_norm 26364700.0000 | dASR  +5.20pp | nu 37.02%
+  running_mean_dir  x tascp   | C_norm 74397616.0000 | dASR +11.80pp | nu 24.23%

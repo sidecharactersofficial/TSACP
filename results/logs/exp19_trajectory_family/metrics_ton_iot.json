@@ -1,0 +1,72 @@
+{
+  "tascp": {
+    "naive_asr": 0.9819999933242798,
+    "adaptive_asr": 0.9139999747276306,
+    "fixed_state_asr": 0.8659999966621399,
+    "adaptive_delta": 0.04799997806549072,
+    "naive_delta": 0.11599999666213989,
+    "coupling_C": 40802624.0,
+    "coupling_firing_frac": 1.0,
+    "q_to_success_adaptive": 7.918000221252441,
+    "q_to_success_naive": 5.2179999351501465,
+    "nu_session": 0.37016666666666664,
+    "nu_final": 0.3619999885559082,
+    "mean_state": 0.11793861289819081
+  },
+  "tscale": {
+    "naive_asr": 0.8379999995231628,
+    "adaptive_asr": 0.8700000047683716,
+    "fixed_state_asr": 0.8659999966621399,
+    "adaptive_delta": 0.0040000081062316895,
+    "naive_delta": -0.02799999713897705,
+    "coupling_C": 1.9550775289535522,
+    "coupling_firing_frac": 1.0,
+    "q_to_success_adaptive": 7.558000087738037,
+    "q_to_success_naive": 8.942000389099121,
+    "nu_session": 0.08316666666666667,
+    "nu_final": 0.04800000041723251,
+    "mean_state": 0.11793861289819081
+  },
+  "tshift": {
+    "naive_asr": 0.9919999837875366,
+    "adaptive_asr": 0.972000002861023,
+    "fixed_state_asr": 0.8659999966621399,
+    "adaptive_delta": 0.10600000619888306,
+    "naive_delta": 0.12599998712539673,
+    "coupling_C": 3.654891014099121,
+    "coupling_firing_frac": 1.0,
+    "q_to_success_adaptive": 4.572000026702881,
+    "q_to_success_naive": 5.084000110626221,
+    "nu_session": 0.15733333333333333,
+    "nu_final": 0.15600000321865082,
+    "mean_state": 0.11793861289819081
+  },
+  "tshear": {
+    "naive_asr": 0.8539999723434448,
+    "adaptive_asr": 0.843999981880188,
+    "fixed_state_asr": 0.8659999966621399,
+    "adaptive_delta": -0.022000014781951904,
+    "naive_delta": -0.012000024318695068,
+    "coupling_C": 5504299.0,
+    "coupling_firing_frac": 1.0,
+    "q_to_success_adaptive": 5.797999858856201,
+    "q_to_success_naive": 8.329999923706055,
+    "nu_session": 0.08533333333333333,
+    "nu_final": 0.05400000140070915,
+    "mean_state": 0.11793861289819081
+  },
+  "tnoise": {
+    "naive_asr": 0.8679999709129333,
+    "adaptive_asr": 0.8659999966621399,
+    "fixed_state_asr": 0.8659999966621399,
+    "adaptive_delta": 0.0,
+    "naive_delta": 0.001999974250793457,
+    "coupling_C": 0.3162476420402527,
+    "coupling_firing_frac": 1.0,
+    "q_to_success_adaptive": 9.192000389099121,
+    "q_to_success_naive": 10.03600025177002,
+    "nu_session": 0.16066666666666668,
+    "nu_final": 0.1459999978542328,
+    "mean_state": 0.11793861289819081
+  }
+}

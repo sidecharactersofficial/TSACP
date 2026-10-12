@@ -1,0 +1,5 @@
+# BIM Attack configuration
+name: "bim"
+epsilon: 0.03
+alpha: 0.01
+num_steps: 40

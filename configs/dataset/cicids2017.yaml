@@ -1,0 +1,3 @@
+dataset: "cicids2017"
+path: "data/processed/cicids2017/cicids2017_processed.parquet"
+d_feature: 78  # CICIDS2017 target dimensionality

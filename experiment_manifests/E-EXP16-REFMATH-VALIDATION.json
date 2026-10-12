@@ -1,0 +1,25 @@
+{
+  "experiment_id": "E-EXP16-REFMATH-VALIDATION",
+  "experiment_number": 16,
+  "claim": "C9",
+  "description": "Independent reference-math validation (autograd vs central finite differences, rho, NES cosine, Cor-3 M_t).",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "oracle": "central finite differences"
+  },
+  "expected_output": "results/logs/exp16_refmath/metrics_unsw_nb15.json, results/tables/exp16_*",
+  "expected_properties": {
+    "autograd_vs_fd": "match within tolerance",
+    "rho": "reported",
+    "cor3_Mt": "reported"
+  },
+  "reproducibility_level": "R2",
+  "script": "experiments/exp16_refmath_validation/run.py",
+  "git_commit": "270807a"
+}

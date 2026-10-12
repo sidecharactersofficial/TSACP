@@ -1,0 +1,34 @@
+{
+  "experiment_id": "E-EXP23-DEFENSE-AUDIT",
+  "experiment_number": 23,
+  "claim": "C14",
+  "description": "Defense audit: fraction of adversarial verdicts flipped back to benign and detector/limiter effect.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    },
+    {
+      "name": "NF-ToN-IoT-v2",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/ton_iot/ton_iot_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "audit": [
+      "nu_allow",
+      "detectors",
+      "rate_limiter"
+    ]
+  },
+  "expected_output": "results/logs/exp23_*/metrics_*.json, results/tables/exp23_defense_audit_*.csv",
+  "expected_properties": {
+    "tn_iot_nu_allow": 0.185,
+    "detectors": 0.0,
+    "rate_limiter": 0.0
+  },
+  "reproducibility_level": "R2",
+  "script": "experiments/exp23_defense_audit/run.py",
+  "git_commit": "270807a"
+}

@@ -1,0 +1,18 @@
++ python -u -m experiments.exp11_detector_robustness.run unsw_nb15
++ echo 'exp11-unsw exit: 1'
+exp11-unsw exit: 1
++ python -u -m experiments.exp11_detector_robustness.run cicids2017
++ echo 'exp11-cicids exit: 1'
+exp11-cicids exit: 1
++ python -u -m experiments.exp12_cicids_disambiguation.run cicids2017
++ echo 'exp12 exit: 0'
+exp12 exit: 0
++ python -u -m experiments.exp13_whitebox_multiseed.run unsw_nb15 --with-xgb
++ echo 'exp13-unsw exit: 0'
+exp13-unsw exit: 0
++ python -u -m experiments.exp13_whitebox_multiseed.run cicids2017
++ echo 'exp13-cicids exit: 0'
+exp13-cicids exit: 0
++ python -u -m experiments.exp14_stationarity.run all
++ echo 'exp14 exit: 0'
+exp14 exit: 0

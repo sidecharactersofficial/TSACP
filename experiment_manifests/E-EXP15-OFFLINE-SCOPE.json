@@ -1,0 +1,23 @@
+{
+  "experiment_id": "E-EXP15-OFFLINE-SCOPE",
+  "experiment_number": 15,
+  "claim": "C10",
+  "description": "Offline / network-flow scope of the mechanism.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "scope": "offline netflow"
+  },
+  "expected_output": "results/logs/exp15_offline_and_scope/, results/tables/exp15_*",
+  "expected_properties": {
+    "offline_scope": "defined"
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp15_offline_and_scope/run.py",
+  "git_commit": "270807a"
+}

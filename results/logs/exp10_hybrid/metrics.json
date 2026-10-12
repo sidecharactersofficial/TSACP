@@ -1,0 +1,61 @@
+{
+  "benign_calibration": {
+    "queries": 1280,
+    "flag_rate": 0.0,
+    "note": "held-out benign sessions; each row = one client with W-window history"
+  },
+  "NES vs Undefended + Detection": {
+    "asr": 0.0,
+    "asr_attack_internal": 0.0,
+    "mean_queries_to_success": NaN,
+    "total_queries": 504000,
+    "queries_flagged": 494656,
+    "flag_rate": 0.9775810276679842,
+    "client_detected": true
+  },
+  "NES vs TASCP (Naive) + Passive Detection": {
+    "asr": 0.023499999195337296,
+    "asr_attack_internal": 0.026000000536441803,
+    "mean_queries_to_success": 176.88461303710938,
+    "total_queries": 504000,
+    "queries_flagged": 494656,
+    "flag_rate": 0.9775810276679842,
+    "client_detected": true
+  },
+  "NES vs Hybrid (TASCP + Detection)": {
+    "asr": 0.0,
+    "asr_attack_internal": 0.0,
+    "mean_queries_to_success": NaN,
+    "total_queries": 504000,
+    "queries_flagged": 494656,
+    "flag_rate": 0.9775810276679842,
+    "client_detected": true
+  },
+  "HSJ vs Undefended + Detection": {
+    "asr": 0.0,
+    "asr_attack_internal": 0.9710000157356262,
+    "mean_queries_to_success": 50.8985595703125,
+    "total_queries": 2014000,
+    "queries_flagged": 1836846,
+    "flag_rate": 0.9111339285714286,
+    "client_detected": true
+  },
+  "HSJ vs TASCP (Naive) + Passive Detection": {
+    "asr": 0.24300000071525574,
+    "asr_attack_internal": 0.9070000052452087,
+    "mean_queries_to_success": 66.25358581542969,
+    "total_queries": 2050000,
+    "queries_flagged": 1873113,
+    "flag_rate": 0.9128230994152047,
+    "client_detected": true
+  },
+  "HSJ vs Hybrid (TASCP + Detection)": {
+    "asr": 0.0,
+    "asr_attack_internal": 0.9244999885559082,
+    "mean_queries_to_success": 47.66197967529297,
+    "total_queries": 2014000,
+    "queries_flagged": 1840441,
+    "flag_rate": 0.9129171626984127,
+    "client_detected": true
+  }
+}

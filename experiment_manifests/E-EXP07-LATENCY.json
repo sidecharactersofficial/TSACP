@@ -1,0 +1,29 @@
+{
+  "experiment_id": "E-EXP07-LATENCY",
+  "experiment_number": 7,
+  "claim": "C15",
+  "description": "End-to-end HTTP endpoint latency of the defended service.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "endpoint": "HTTP",
+    "stats": [
+      "mean",
+      "p99"
+    ]
+  },
+  "expected_output": "experiments/exp7_latency_benchmark/exp7_summary.md (prose)",
+  "expected_properties": {
+    "mean_ms": 7.08,
+    "p99_ms": 20.79
+  },
+  "reproducibility_level": "R4",
+  "script": "experiments/exp7_latency_benchmark/run.py",
+  "git_commit": "270807a",
+  "note": "Prose summary only; no archived machine-readable output."
+}

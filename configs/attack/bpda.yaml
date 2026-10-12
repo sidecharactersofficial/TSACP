@@ -1,0 +1,5 @@
+# BPDA Adaptive Attack configuration
+# Used for the gradient-masking adaptive attack test
+name: "bpda"
+epsilon: 0.03
+# TODO: Add BPDA specific parameters

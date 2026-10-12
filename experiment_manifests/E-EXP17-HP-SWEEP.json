@@ -1,0 +1,41 @@
+{
+  "experiment_id": "E-EXP17-HP-SWEEP",
+  "experiment_number": 17,
+  "claim": "C17",
+  "description": "Hyperparameter sweep (gamma, tau, window) of adaptive vs basis-fixed.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "gamma": [
+      10,
+      50,
+      100
+    ],
+    "tau": [
+      0,
+      0.01,
+      0.05
+    ],
+    "window": [
+      3,
+      5,
+      10
+    ],
+    "draw": 500
+  },
+  "expected_output": "results/logs/exp17_hp_sweep/metrics_unsw_nb15.json, results/tables/exp17_hp_sweep_unsw_nb15.csv",
+  "expected_properties": {
+    "undefended_asr": 9.8,
+    "adaptive_wins": "6/27",
+    "best_asr": 1.4,
+    "basis_fixed_within_2pp": "26/27"
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp17_hp_sweep/run.py",
+  "git_commit": "270807a"
+}

@@ -1,0 +1,27 @@
+{
+  "experiment_id": "E-EXP06-FALSE-POSITIVE-RATE",
+  "experiment_number": 6,
+  "claim": "C15",
+  "description": "Operational false-positive rate and rotation-trigger rate on clean benign traffic.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "scope": "500 benign sessions x >=5 packets (groupby sort=True)",
+    "seed": null
+  },
+  "expected_output": "results/logs/exp6_false_positive_rate/metrics_unsw_nb15.json",
+  "expected_properties": {
+    "n_evaluated": 21509,
+    "fpr": 0.0,
+    "rotation_trigger_fraction": 0.0121
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp6_false_positive_rate/run.py",
+  "git_commit": "270807a",
+  "note": "Archived traceability record; streaming two-pass session collection (memory-bounded)."
+}

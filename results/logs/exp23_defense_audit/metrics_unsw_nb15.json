@@ -1,0 +1,59 @@
+{
+  "dataset": "unsw_nb15",
+  "n_samples": 100,
+  "defenses": {
+    "tascp": {
+      "defense": "tascp",
+      "coupling_C_norm": 85366376.0,
+      "coupling_firing_frac": 1.0,
+      "stat_nu_session": 0.14857456140350878,
+      "stat_nu_allow": 0.36217948717948717,
+      "stat_n_adv0": 52,
+      "stat_nu_final": 0.125,
+      "stat_alert_rate": 0.24287280701754385,
+      "evasion": {
+        "nes_independent": 0.0,
+        "nes_antithetic_jitter": 0.0,
+        "square": 0.0,
+        "random_search": 0.9900000095367432
+      }
+    },
+    "blacklight_sim": {
+      "defense": "blacklight_sim",
+      "coupling_C_norm": null,
+      "coupling_firing_frac": null,
+      "stat_nu_session": 0.43859649122807015,
+      "stat_nu_allow": 0.0,
+      "stat_n_adv0": 52,
+      "stat_nu_final": 0.6578947305679321,
+      "stat_alert_rate": 0.7807017543859649,
+      "evasion": {
+        "nes_independent": 0.0,
+        "nes_antithetic_jitter": 0.0,
+        "square": 0.0,
+        "random_search": 0.0
+      }
+    },
+    "rate_limit": {
+      "defense": "rate_limit",
+      "coupling_C_norm": null,
+      "coupling_firing_frac": null,
+      "stat_nu_session": 0.0,
+      "stat_nu_allow": 0.0,
+      "stat_n_adv0": 52,
+      "stat_nu_final": 0.0,
+      "stat_alert_rate": 0.34210526315789475,
+      "evasion": {
+        "nes_independent": 0.0,
+        "nes_antithetic_jitter": 0.0,
+        "square": 0.0,
+        "random_search": 0.0
+      }
+    }
+  },
+  "benign_fp": {
+    "tascp": 0.0,
+    "blacklight_sim": 1.0,
+    "rate_limit": 0.0
+  }
+}

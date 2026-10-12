@@ -1,0 +1,35 @@
+{
+  "experiment_id": "E-EXP08-ADAPTIVE-ABLATIONS",
+  "experiment_number": 8,
+  "claim": "C4",
+  "description": "Targeted ablations isolating the attacker's exploitation path (gradient-magnitude detach, basis uncoupling, projection-only).",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "eps": 0.1,
+    "alpha": 0.01,
+    "iterations": 20,
+    "norm": "L2",
+    "seed": 42,
+    "scope": "2000 correctly-classified benign"
+  },
+  "expected_output": "results/logs/exp8_adaptive_ablations/metrics_unsw_nb15.json; results/tables/exp8_ablations_unsw_nb15.csv",
+  "expected_properties": {
+    "naive_asr": 22.95,
+    "adaptive_asr": 53.6,
+    "ablation_grad_mag_asr": 61.6,
+    "ablation_basis_asr": 10.3,
+    "ablation_projection_only_asr": 95.7,
+    "undefended_reference_asr": 10.5,
+    "basis_vs_undefended_p": 0.836
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp8_adaptive_ablations/run.py",
+  "git_commit": "270807a",
+  "note": "Archived per-condition traceability records + two-proportion z-test; seeded run reproduces exactly."
+}

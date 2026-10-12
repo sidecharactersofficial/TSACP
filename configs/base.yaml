@@ -1,0 +1,8 @@
+# TASCP Base Configuration
+# MUST match the current defaults of the tascp-proto fast-loop!
+defense:
+  gamma: 0.5
+  lambda_coeff: 1.0
+  k: 2.0
+  tau: 1.0
+  window_size_w: 10

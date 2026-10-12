@@ -1,0 +1,35 @@
+# Domain-constrained perturbation spec (UNSW-NB15) — used by
+# attacks/domain_constraints.py to project adversarial samples back onto the
+# feasible data domain.
+#
+#   binary:     fields with exactly two valid states
+#   discrete:   label-encoded categorical fields / integer counts (snap to the
+#               nearest level observed in the processed training data)
+#   immutable:  fields an attacker riding a benign session cannot choose
+#               freely (deployment-specific; empty for UNSW-NB15 because the
+#               processed parquet exposes no such metadata column)
+#
+# Valid levels are derived at runtime from data/processed/unsw_nb15/*.parquet,
+# so the spec never hard-codes encodings.
+
+binary:
+  - is_sm_ips_ports
+
+discrete:
+  - proto
+  - state
+  - service
+  - is_ftp_login
+  - ct_ftp_cmd
+  - ct_state_ttl
+  - ct_flw_http_mthd
+  - trans_depth
+  - ct_srv_src
+  - ct_srv_dst
+  - ct_dst_ltm
+  - ct_src_ltm
+  - ct_src_dport_ltm
+  - ct_dst_sport_ltm
+  - ct_dst_src_ltm
+
+immutable: []

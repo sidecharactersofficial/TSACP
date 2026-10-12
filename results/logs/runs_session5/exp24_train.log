@@ -1,0 +1,12 @@
+loading /root/workspace/workspace/03-Code/Projects/Legacy/Project Archimedes/data/processed/ton_iot/ton_iot_processed.parquet
+rows=3388100 features=41 pos_rate=0.6402
+epoch 1/5 loss 0.1626
+epoch 2/5 loss 0.0636
+epoch 3/5 loss 0.0579
+epoch 4/5 loss 0.0540
+epoch 5/5 loss 0.0514
+acc=0.9819 precision=0.9800 recall=0.9920 f1=0.9860
+confusion matrix:
+[[235007   8792]
+ [  3456 430365]]
+saved /root/workspace/workspace/03-Code/Projects/Legacy/Project Archimedes/src/tascp_eval/models/weights/ton_iot_nids.pth

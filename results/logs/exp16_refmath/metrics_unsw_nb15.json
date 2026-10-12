@@ -1,0 +1,65 @@
+{
+  "lemma3_fd_vs_autograd": {
+    "n_comparisons": 9216,
+    "median_rel_err_all": 1.3724229120271048e-05,
+    "median_rel_err_M_pos": 1.3722371022595325e-05,
+    "p90_rel_err_M_pos": 9.861444850685088e-05,
+    "M_pos_frac_mean": 0.9965277777777778
+  },
+  "theorem1_decomposition": {
+    "cos_full_vs_angle_detached": 1.0,
+    "cos_full_vs_basis_fixed": 1.0,
+    "cos_angle_vs_basis": 1.0,
+    "grad_norm_full": 100.38972473144531,
+    "grad_norm_angle_detached": 100.38972473144531,
+    "grad_norm_basis_fixed": 100.38972473144531,
+    "trigger_fired_frac": 1.0
+  },
+  "lemma2_rho": {
+    "rho_mean": 0.19819717691279948,
+    "rho_isotropic_pred": 0.21566554640687682,
+    "ratio_real_over_isotropic": 0.9190025027867857,
+    "d": 43,
+    "n_trials": 32
+  },
+  "prop3_nes_cosine": {
+    "2": {
+      "measured": 0.007612827544411023,
+      "predicted_isotropic": 0.20851441405707477
+    },
+    "5": {
+      "measured": 0.02625720389187336,
+      "predicted_isotropic": 0.31943828249996997
+    },
+    "10": {
+      "measured": 0.021323795430362225,
+      "predicted_isotropic": 0.4303314829119352
+    },
+    "25": {
+      "measured": 0.012014814962943396,
+      "predicted_isotropic": 0.601929265428846
+    },
+    "50": {
+      "measured": 0.04290628246963024,
+      "predicted_isotropic": 0.7293249574894728
+    },
+    "100": {
+      "measured": 0.04567866399884224,
+      "predicted_isotropic": 0.8333333333333334
+    }
+  },
+  "cor3_mt": {
+    "n_blocks": 3,
+    "with_anchor": {
+      "mean": -0.7030324468061762,
+      "p_mt_gt_0": 0.016489497950819672,
+      "n": 31232
+    },
+    "without_anchor": {
+      "mean": -0.7034649248405537,
+      "p_mt_gt_0": 0.0,
+      "n": 29696
+    },
+    "theory_E_mt": -0.8944271909999159
+  }
+}

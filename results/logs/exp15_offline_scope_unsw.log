@@ -1,0 +1,59 @@
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 2000 points for attack
+
+=== EXP 15: offline attacker + Corollary-3 scope (unsw_nb15, 2000 samples) ===
+
+=== EXP 15 part A: offline attacker (unsw_nb15) ===
+  white-box offline: bit-identical TASCP==DACM: True (max|diff|=0.00e+00), verdict agreement True
+  surrogate mismatch: transfer ASR undefended 0.55% | DACM 0.55% | TASCP fresh session 0.55%
+
+=== EXP 15 part B: Corollary-3 trigger scope (unsw_nb15) ===
+
+--- scope ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 0.75% | Mean Q to success: 43.4 | Mean L2: 0.0641 | Total Q: 252000
+  NES (antithetic)       | fire   9.93% | ASR   0.75%
+
+--- scope ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 0.60% | Mean Q to success: 16.5 | Mean L2: 0.0709 | Total Q: 242000
+  nes_independent        | fire  20.91% | ASR   0.60%
+
+--- scope ---
+Rotation triggered (final query, mean over chunks): 49.15%
+ASR: 1.25% | Mean Q to success: 37.4 | Mean L2: 0.0991 | Total Q: 240000
+  spsa                   | fire  64.90% | ASR   1.25%
+
+--- scope ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 0.60% | Mean Q to success: 89.9 | Mean L2: 0.0335 | Total Q: 244000
+  zoo                    | fire   2.49% | ASR   0.60%
+
+--- scope ---
+Rotation triggered (final query, mean over chunks): 8.45%
+ASR: 0.85% | Mean Q to success: 25.8 | Mean L2: 0.0994 | Total Q: 242000
+  simba                  | fire  23.30% | ASR   0.85%
+
+--- scope ---
+Rotation triggered (final query, mean over chunks): 20.15%
+ASR: 46.70% | Mean Q to success: 2.0 | Mean L2: 0.6430 | Total Q: 240000
+  square                 | fire  20.73% | ASR  46.70%
+
+--- scope ---
+Rotation triggered (final query, mean over chunks): 14.45%
+ASR: 75.80% | Mean Q to success: 8.0 | Mean L2: 0.4443 | Total Q: 240000
+  boundary               | fire  41.01% | ASR  75.80%
+
+=== EXP 15 SUMMARY ===
+Offline attacker: TASCP==DACM bit-identical: True; verdict agreement: True
+Corollary-3 scope (trigger fire rate per attack):
+  NES (antithetic)       | fire   9.93%
+  nes_independent        | fire  20.91%
+  spsa                   | fire  64.90%
+  zoo                    | fire   2.49%
+  simba                  | fire  23.30%
+  square                 | fire  20.73%
+  boundary               | fire  41.01%

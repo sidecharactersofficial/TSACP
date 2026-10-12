@@ -1,0 +1,32 @@
+{
+  "experiment_id": "E-EXP20-COUPLING-SWEEP",
+  "experiment_number": 20,
+  "claim": "C11",
+  "description": "Coupling sweep: Spearman correlation between log C_norm and dASR; open vs closed channel.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    },
+    {
+      "name": "NF-ToN-IoT-v2",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/ton_iot/ton_iot_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "channels": [
+      "open",
+      "closed"
+    ]
+  },
+  "expected_output": "results/logs/exp20_*/metrics_*.json, results/tables/exp20_*",
+  "expected_properties": {
+    "spearman_rho_logC_dASR": 0.086,
+    "p_value": 0.65
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp20_coupling_audit/run.py",
+  "git_commit": "270807a"
+}

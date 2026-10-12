@@ -1,0 +1,82 @@
+{
+  "gamma=5.0": {
+    "delta_theta_mean_last_query": 0.033488206565380096,
+    "delta_theta_mean_trajectory": 0.03241032548248768,
+    "nu_session": 0.08528645833333333,
+    "nu_final": 0.50390625,
+    "nu_control": 0.0,
+    "mean_predicted_halfwidth": 0.0037543015787377954
+  },
+  "gamma=10.0": {
+    "delta_theta_mean_last_query": 0.13371315598487854,
+    "delta_theta_mean_trajectory": 0.06482065096497536,
+    "nu_session": 0.12630208333333334,
+    "nu_final": 0.48828125,
+    "nu_control": 0.0,
+    "mean_predicted_halfwidth": 0.007507082850982745
+  },
+  "gamma=25.0": {
+    "delta_theta_mean_last_query": 0.7000315189361572,
+    "delta_theta_mean_trajectory": 0.1620516317586104,
+    "nu_session": 0.16471354166666666,
+    "nu_final": 0.42578125,
+    "nu_control": 0.0,
+    "mean_predicted_halfwidth": 0.018741118411223095
+  },
+  "gamma=50.0": {
+    "delta_theta_mean_last_query": 0.8492525219917297,
+    "delta_theta_mean_trajectory": 0.3241032635172208,
+    "nu_session": 0.15950520833333334,
+    "nu_final": 0.3515625,
+    "nu_control": 0.0,
+    "mean_predicted_halfwidth": 0.03729284927248955
+  },
+  "gamma=100.0": {
+    "delta_theta_mean_last_query": 0.9706824421882629,
+    "delta_theta_mean_trajectory": 0.6482065270344416,
+    "nu_session": 0.14388020833333334,
+    "nu_final": 0.3515625,
+    "nu_control": 0.0,
+    "mean_predicted_halfwidth": 0.07308745508392651
+  },
+  "gamma=200.0": {
+    "delta_theta_mean_last_query": 1.1363344192504883,
+    "delta_theta_mean_trajectory": 1.199177493651708,
+    "nu_session": 0.13151041666666666,
+    "nu_final": 0.3515625,
+    "nu_control": 0.0,
+    "mean_predicted_halfwidth": 0.12843878691395125
+  },
+  "sin_scaling_check": [
+    {
+      "gamma_from": 5.0,
+      "gamma_to": 10.0,
+      "predicted": 1.9997373984473623,
+      "measured": 1.4809160305343514
+    },
+    {
+      "gamma_from": 5.0,
+      "gamma_to": 25.0,
+      "predicted": 4.994749550617741,
+      "measured": 1.9312977099236641
+    },
+    {
+      "gamma_from": 5.0,
+      "gamma_to": 50.0,
+      "predicted": 9.956725593427713,
+      "measured": 1.870229007633588
+    },
+    {
+      "gamma_from": 5.0,
+      "gamma_to": 100.0,
+      "predicted": 19.652551991631682,
+      "measured": 1.687022900763359
+    },
+    {
+      "gamma_from": 5.0,
+      "gamma_to": 200.0,
+      "predicted": 34.8239454228316,
+      "measured": 1.5419847328244274
+    }
+  ]
+}

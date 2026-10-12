@@ -1,0 +1,32 @@
+{
+  "experiment_id": "E-EXP-CROSS-ARCH-TRANSFORMER",
+  "experiment_number": "TRANSFORMER",
+  "claim": "C13",
+  "description": "Cross-architecture comparison on a 2-layer TabTransformer (d_model=128), same budget=20 / n=2000 protocol.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "model": "TabTransformer d_model=128",
+    "budget": 20,
+    "scope": 2000
+  },
+  "expected_output": "results/cross_architecture_transformer.md; experiments/exp_transformer/run.py",
+  "expected_properties": {
+    "accuracy": 0.9914,
+    "f1": 0.9658,
+    "undefended_asr": 1.05,
+    "naive_asr": 12.5,
+    "adaptive_asr": 7.0,
+    "ablation_basis_asr": 1.05,
+    "naive_vs_adaptive_l2_diff": 0.06056
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp_transformer/run.py",
+  "git_commit": "270807a",
+  "note": "Not one of the numbered exp1-exp24; shipped as exp_transformer/."
+}

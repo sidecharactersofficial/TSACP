@@ -1,0 +1,103 @@
+{
+  "NES / Undefended": {
+    "asr": 0.22300000488758087,
+    "mean_queries_to_success": 142.4327392578125,
+    "mean_l2_distance": 0.05991571769118309,
+    "total_queries": 504000
+  },
+  "NES / TASCP (Naive)": {
+    "asr": 0.22300000488758087,
+    "mean_queries_to_success": 144.50448608398438,
+    "mean_l2_distance": 0.05998587980866432,
+    "total_queries": 504000,
+    "rotation_triggered_frac": 0.0
+  },
+  "NES / TASCP (Naive) + Domain-Constrained": {
+    "asr": 0.21250000596046448,
+    "mean_queries_to_success": 143.5411834716797,
+    "mean_l2_distance": 0.05206461623311043,
+    "total_queries": 504000,
+    "rotation_triggered_frac": 0.0
+  },
+  "NES / Undefended + Domain-Constrained": {
+    "asr": 0.21549999713897705,
+    "mean_queries_to_success": 143.05335998535156,
+    "mean_l2_distance": 0.05208645015954971,
+    "total_queries": 504000
+  },
+  "HSJ / Undefended": {
+    "asr": 0.15049999952316284,
+    "mean_queries_to_success": 56.11960220336914,
+    "mean_l2_distance": 0.642370343208313,
+    "total_queries": 2014000
+  },
+  "HSJ / TASCP (Naive)": {
+    "asr": 0.8740000128746033,
+    "mean_queries_to_success": 62.07666015625,
+    "mean_l2_distance": 1.0592024326324463,
+    "total_queries": 2041000,
+    "rotation_triggered_frac": 0.8735000044107437
+  },
+  "nes_budget_sweep": {
+    "100": {
+      "Undefended": {
+        "asr": 0.08349999785423279,
+        "mean_queries_to_success": 68.65868377685547,
+        "mean_l2_distance": 0.035213105380535126,
+        "total_queries": 210000
+      },
+      "TASCP (Naive)": {
+        "asr": 0.08299999684095383,
+        "mean_queries_to_success": 68.6927719116211,
+        "mean_l2_distance": 0.03527441993355751,
+        "total_queries": 210000,
+        "rotation_triggered_frac": 0.0
+      }
+    },
+    "250": {
+      "Undefended": {
+        "asr": 0.22300000488758087,
+        "mean_queries_to_success": 142.4327392578125,
+        "mean_l2_distance": 0.05991571769118309,
+        "total_queries": 504000
+      },
+      "TASCP (Naive)": {
+        "asr": 0.22300000488758087,
+        "mean_queries_to_success": 144.50448608398438,
+        "mean_l2_distance": 0.05998587980866432,
+        "total_queries": 504000,
+        "rotation_triggered_frac": 0.0
+      }
+    },
+    "500": {
+      "Undefended": {
+        "asr": 0.3799999952316284,
+        "mean_queries_to_success": 234.34341430664062,
+        "mean_l2_distance": 0.09132647514343262,
+        "total_queries": 1008000
+      },
+      "TASCP (Naive)": {
+        "asr": 0.3785000145435333,
+        "mean_queries_to_success": 235.57728576660156,
+        "mean_l2_distance": 0.09134699404239655,
+        "total_queries": 1008000,
+        "rotation_triggered_frac": 0.0
+      }
+    },
+    "1000": {
+      "Undefended": {
+        "asr": 0.41449999809265137,
+        "mean_queries_to_success": 270.998779296875,
+        "mean_l2_distance": 0.09926366060972214,
+        "total_queries": 2016000
+      },
+      "TASCP (Naive)": {
+        "asr": 0.41499999165534973,
+        "mean_queries_to_success": 273.98675537109375,
+        "mean_l2_distance": 0.0992671400308609,
+        "total_queries": 2016000,
+        "rotation_triggered_frac": 0.0
+      }
+    }
+  }
+}

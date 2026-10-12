@@ -1,0 +1,20 @@
+Loading UNSW-NB15 dataset...
+Loading trained NIDS classifier...
+Running PGD variants on 2000 benign points...
+Loading benign M_t from exp1...
+
+--- Exp 1b Results ---
+Benign (Historical) Mean M_t: 0.1118
+
+--- Running Standard PGD ---
+  Standard PGD Mean M_t: 1.0000 (Var: 0.0000)
+  AUC (Standard PGD vs Benign): 0.9054
+
+--- Running MIM (mu=1.0) ---
+  MIM (mu=1.0) Mean M_t: 1.0000 (Var: 0.0000)
+  AUC (MIM (mu=1.0) vs Benign): 0.9057
+
+--- Running Decaying PGD (gamma=0.9) ---
+  Decaying PGD (gamma=0.9) Mean M_t: 1.0000 (Var: 0.0000)
+  AUC (Decaying PGD (gamma=0.9) vs Benign): 0.9104
+

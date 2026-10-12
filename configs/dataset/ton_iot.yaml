@@ -1,0 +1,5 @@
+dataset: "ton_iot"
+path: "data/processed/ton_iot/ton_iot_processed.parquet"
+d_feature: 43  # NF-ToN-IoT-v2 NetFlow-v9 numeric features after dropping the
+  # src/dst IPv4 address columns and the Label/Attack identity columns; see
+  # data/ton_iot/prepare_ton_iot.py and doc/DIMENSIONALITY.md.

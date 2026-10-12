@@ -1,0 +1,9 @@
+attack,asr_undefended,mean_queries,fire_momentum,fire_cosine,fire_sign_agreement,fire_displacement,fire_antithetic_pair,maxstat_momentum,maxstat_cosine,maxstat_sign_agreement,maxstat_displacement,maxstat_antithetic_pair
+nes_independent,0,15400,1,0.01,0.02,0,0,0.00544403,-0.235199,0.455814,0.414539,0.67529
+spsa,0,15000,1,0,0,0.08,1,0.00794128,-0.426351,0.302326,0.571063,0.813666
+zoo,0,15200,0.35,0,1,1,0,0.000173638,-0.49857,0.95814,0.698952,0.666667
+simba,0,15100,1,0,0,0.02,1,0.00217777,-0.295791,0.376744,0.472424,1
+square,0,15000,0.62,1,1,1,1,0.0178778,0.169314,1,1,1
+boundary,0.76,15000,0.77,0.99,0.99,0.46,0.64,0.0394124,0.388098,0.781395,0.967687,0.990468
+random_search,1,150,1,1,1,1,0,0.0122103,0.247164,0.604651,0.9882,0.668363
+nes_antithetic_jitter,0,16800,0.93,0.94,0,0,0.01,0.00585335,-0.114139,0.432558,0.450994,0.713797

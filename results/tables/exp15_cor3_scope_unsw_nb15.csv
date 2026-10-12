@@ -1,0 +1,8 @@
+attack,trigger_fire_frac,asr,total_queries
+NES (antithetic),0.0993,0.0075,252000
+nes_independent,0.2091,0.0060,242000
+spsa,0.6490,0.0125,240000
+zoo,0.0249,0.0060,244000
+simba,0.2330,0.0085,242000
+square,0.2073,0.4670,240000
+boundary,0.4101,0.7580,240000

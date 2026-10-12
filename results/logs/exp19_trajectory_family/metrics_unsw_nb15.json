@@ -1,0 +1,72 @@
+{
+  "tascp": {
+    "naive_asr": 0.828000009059906,
+    "adaptive_asr": 0.6779999732971191,
+    "fixed_state_asr": 0.5740000009536743,
+    "adaptive_delta": 0.10399997234344482,
+    "naive_delta": 0.2540000081062317,
+    "coupling_C": 73016080.0,
+    "coupling_firing_frac": 1.0,
+    "q_to_success_adaptive": 15.911999702453613,
+    "q_to_success_naive": 7.572000026702881,
+    "nu_session": 0.05733333333333333,
+    "nu_final": 0.06800000369548798,
+    "mean_state": 0.11633795561889808
+  },
+  "tscale": {
+    "naive_asr": 0.5400000214576721,
+    "adaptive_asr": 0.621999979019165,
+    "fixed_state_asr": 0.5740000009536743,
+    "adaptive_delta": 0.04799997806549072,
+    "naive_delta": -0.0339999794960022,
+    "coupling_C": 1.3563374280929565,
+    "coupling_firing_frac": 1.0,
+    "q_to_success_adaptive": 16.59600067138672,
+    "q_to_success_naive": 17.420000076293945,
+    "nu_session": 0.0018333333333333333,
+    "nu_final": 0.0020000000949949026,
+    "mean_state": 0.11633795561889808
+  },
+  "tshift": {
+    "naive_asr": 1.0,
+    "adaptive_asr": 0.9980000257492065,
+    "fixed_state_asr": 0.5740000009536743,
+    "adaptive_delta": 0.4240000247955322,
+    "naive_delta": 0.4259999990463257,
+    "coupling_C": 3.999305009841919,
+    "coupling_firing_frac": 1.0,
+    "q_to_success_adaptive": 6.688000202178955,
+    "q_to_success_naive": 7.260000228881836,
+    "nu_session": 0.10416666666666667,
+    "nu_final": 0.12800000607967377,
+    "mean_state": 0.11633795561889808
+  },
+  "tshear": {
+    "naive_asr": 0.37400001287460327,
+    "adaptive_asr": 0.0860000029206276,
+    "fixed_state_asr": 0.5740000009536743,
+    "adaptive_delta": -0.4879999980330467,
+    "naive_delta": -0.19999998807907104,
+    "coupling_C": 4828766.0,
+    "coupling_firing_frac": 1.0,
+    "q_to_success_adaptive": 18.534000396728516,
+    "q_to_success_naive": 16.961999893188477,
+    "nu_session": 0.00016666666666666666,
+    "nu_final": 0.0,
+    "mean_state": 0.11633795561889808
+  },
+  "tnoise": {
+    "naive_asr": 0.5659999847412109,
+    "adaptive_asr": 0.5820000171661377,
+    "fixed_state_asr": 0.5740000009536743,
+    "adaptive_delta": 0.008000016212463379,
+    "naive_delta": -0.008000016212463379,
+    "coupling_C": 0.34633669257164,
+    "coupling_firing_frac": 1.0,
+    "q_to_success_adaptive": 16.988000869750977,
+    "q_to_success_naive": 17.52400016784668,
+    "nu_session": 0.002,
+    "nu_final": 0.0020000000949949026,
+    "mean_state": 0.11633795561889808
+  }
+}

@@ -1,0 +1,9 @@
++ python -u -m experiments.exp15_offline_and_scope.run unsw_nb15
++ echo 'exp15 exit: 0'
+exp15 exit: 0
++ python -u -m experiments.exp16_refmath_validation.run unsw_nb15
++ echo 'exp16 exit: 0'
+exp16 exit: 0
++ python -u -m experiments.exp17_hp_sweep.run unsw_nb15
++ echo 'exp17 exit: 0'
+exp17 exit: 0

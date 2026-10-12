@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  If you use this artifact, please cite the associated paper. Author and venue
+  metadata are redacted during double-blind review and will be filled in on
+  acceptance.
+title: "TASCP Reproducibility Artifact: Empirical Validation of a Stateful Moving-Target Defense for DNN-based NIDS"
+abstract: >-
+  Artifact for the paper evaluating whether a momentum-conditioned Givens
+  rotation of the constraint manifold (TASCP) can prevent iterative white-box
+  adversaries from crafting adversarial examples against deep network
+  intrusion detectors. The artifact contains the defense and attack
+  implementations, trained checkpoints, dataset preprocessing, archived
+  result records, and verification tooling to reproduce every table and
+  figure of the paper.
+authors:
+  - name: "Anonymous Authors"
+    affiliation: "Redacted for double-blind review"
+version: 1.0.0
+date-released: 2026-10-08
+license: MIT
+keywords:
+  - adversarial machine learning
+  - network intrusion detection
+  - gradient masking
+  - moving target defense
+  - reproducibility

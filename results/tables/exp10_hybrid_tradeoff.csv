@@ -1,0 +1,8 @@
+condition,asr,flag_rate,client_detected
+Benign control (flag rate),,0.0,
+NES vs Undefended + Detection,0.0000,0.9776,True
+NES vs TASCP (Naive) + Passive Detection,0.0235,0.9776,True
+NES vs Hybrid (TASCP + Detection),0.0000,0.9776,True
+HSJ vs Undefended + Detection,0.0000,0.9111,True
+HSJ vs TASCP (Naive) + Passive Detection,0.2430,0.9128,True
+HSJ vs Hybrid (TASCP + Detection),0.0000,0.9129,True

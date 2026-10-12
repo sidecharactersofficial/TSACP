@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E-EXP18-RUST-BENCH",
+  "experiment_number": 18,
+  "claim": "C15",
+  "description": "In-process Rust hot-path microbenchmark (fast-loop per-query cost).",
+  "datasets": [],
+  "configuration": {
+    "benchmark": "criterion",
+    "n_dim": 10
+  },
+  "expected_output": "results/logs/exp18_rust_bench/bench_summary.json",
+  "expected_properties": {
+    "ns_per_query": 53.3
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp18_rust_bench/run.py -> tascp-proto/fast-loop/benches/hot_path.rs",
+  "git_commit": "270807a",
+  "note": "Driver aggregates criterion target/criterion/*/new/estimates.json; rerun with --no-run to re-aggregate the archive."
+}

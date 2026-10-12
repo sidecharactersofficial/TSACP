@@ -1,0 +1,24 @@
+# Black-box query attack configuration (exp9_blackbox_attack)
+# Score-based (NES) and decision-based (HopSkipJump) attacks against
+# undefended vs. TASCP. Epsilon matches tascp-experiments/configs/attack/pgd.yaml
+# so black-box results are comparable with the white-box experiments.
+
+nes:
+  epsilon: 0.1        # l2 radius (same budget as white-box PGD in exp5)
+  sigma: 0.05         # NES perturbation scale for gradient estimation
+  alpha: 0.02         # step size
+  q: 10               # antithetic pairs per step (2q queries per step)
+  max_queries: 250    # default per-sample query budget
+  budget_sweep: [100, 250, 500, 1000]
+
+hopskipjump:
+  N: 16               # boundary directions sampled per step
+  b: 6                # bisection iterations per ray / re-projection
+  delta_0: 0.1        # initial interior-step size
+  delta_min: 0.001
+  max_queries: 1000
+  init_radii: [0.05, 0.1, 0.25, 0.5, 1.0, 2.0, 4.0]
+  init_draws: 2
+
+samples: 2000
+seed: 42

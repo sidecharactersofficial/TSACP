@@ -1,0 +1,10 @@
+{
+  "description": "SHA-256 of every shipped model checkpoint (weights + tree-model JSON). Generated 2026-10-09.",
+  "checkpoints": {
+    "src/tascp_eval/models/weights/unsw_nb15_nids.pth": "922ee791180e893f4a37771495ca6f75adbbd2ea62adad67c1b75490c0f3a5d3",
+    "src/tascp_eval/models/weights/cicids2017_nids.pth": "8afaecc5e185a1f338276be8d99be6d4d9a89c27c5c1d0da7aa84fff4b1ec69d",
+    "src/tascp_eval/models/weights/ton_iot_nids.pth": "fc2e4a33372c2719f443719a75bf4cf04fdbb67c900eecad48898db1180aed29",
+    "src/tascp_eval/models/weights/unsw_nb15_transformer.pth": "b4195d8a4b30d5d1d52680fe84e97579e7853004b39a8248ea94ca2ed2aad473",
+    "src/tascp_eval/models/weights/unsw_nb15_xgboost.json": "0f87c7a9cc7bd973f2e931d47dd7cc1ce72c929b8c9213ee7910877d87ea9a40"
+  }
+}

@@ -1,0 +1,8 @@
+# Canonical white-box PGD / adaptive-BPDA protocol.
+# These values are what exp5 / exp8 / exp13 actually run with; they are hashed
+# into every archived result via config_sha256 (see src/tascp_eval/traceability.py).
+name: "pgd"
+epsilon: 0.1
+alpha: 0.01
+iterations: 20
+norm: "l2"

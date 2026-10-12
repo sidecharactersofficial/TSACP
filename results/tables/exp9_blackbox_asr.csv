@@ -1,0 +1,7 @@
+condition,asr,mean_queries_to_success,mean_l2_distance
+NES / Undefended,0.0270,178.89,0.0995
+NES / TASCP (Naive),0.0260,176.88,0.0995
+NES / TASCP (Naive) + Domain-Constrained,0.0080,63.00,0.0957
+NES / Undefended + Domain-Constrained,0.0080,63.00,0.0958
+HSJ / Undefended,0.9710,68.80,0.6373
+HSJ / TASCP (Naive),0.9070,66.25,0.7121

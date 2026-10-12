@@ -1,0 +1,27 @@
+{
+  "experiment_id": "E-EXP10-HYBRID-DEFENSE",
+  "experiment_number": 10,
+  "claim": "C6",
+  "description": "Hybrid defense metrics (TASCP combined with rate limiting / detectors).",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "components": [
+      "TASCP",
+      "rate-limiter",
+      "detector"
+    ]
+  },
+  "expected_output": "results/logs/exp10_hybrid/, results/tables/exp10_*",
+  "expected_properties": {
+    "hybrid_asr": "reduced vs undefended"
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp10_hybrid_detection_sim/run.py",
+  "git_commit": "270807a"
+}

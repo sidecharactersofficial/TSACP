@@ -1,0 +1,5 @@
+architecture,differentiable,coupling_C_norm,naive_asr,adaptive_asr,fixed_state_asr,adaptive_delta,nu_session,nu_final,fire_momentum_nes_independent,fire_momentum_nes_antithetic_jitter,fire_antithetic_pair_nes_independent,fire_antithetic_pair_nes_antithetic_jitter,asr_nes_independent,asr_nes_antithetic_jitter,asr_square
+mlp,True,6.74779e+07,0.83,0.67,0.56,0.11,0.06625,0.065,1,0.77,0,0.005,0.005,0.005,0.005
+transformer,True,7.91997e+07,0.035,0.015,0.015,0,0.1975,0.215,1,0.765,0,0,0.005,0.005,0.205
+xgboost,False,,,,,,0.0195833,0.035,1,0.745,0,0,0.015,0.015,0.05
+random_forest,False,,,,,,0.00458333,0.005,0.995,0.785,0,0.005,0.01,0.01,0.015

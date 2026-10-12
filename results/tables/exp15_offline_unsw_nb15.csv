@@ -1,0 +1,3 @@
+condition,bit_identical_dacm,bit_identical_undefended,max_abs_diff,submitted_asr
+whitebox_offline,True,True,0.00e+00,0.1050
+surrogate_mismatch,,,,0.0055

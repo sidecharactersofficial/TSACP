@@ -1,0 +1,79 @@
+
+=== EXP 13: white-box multi-seed (unsw_nb15, 5 seeds x 2000 samples) ===
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 2000 points for attack
+
+--- seed 42 ---
+  Undefended                         | ASR  10.50% | Q  10.7
+  TASCP (Naive)                      | ASR  22.95% | Q  10.2
+  TASCP (Full Adaptive)              | ASR  53.60% | Q   4.3
+  TASCP (Basis fixed)                | ASR  10.30% | Q  14.6
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 2000 points for attack
+
+--- seed 43 ---
+  Undefended                         | ASR  11.35% | Q  10.6
+  TASCP (Naive)                      | ASR  22.85% | Q  10.1
+  TASCP (Full Adaptive)              | ASR  52.70% | Q   4.3
+  TASCP (Basis fixed)                | ASR  11.15% | Q  14.7
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 2000 points for attack
+
+--- seed 44 ---
+  Undefended                         | ASR  10.60% | Q  10.4
+  TASCP (Naive)                      | ASR  24.60% | Q  10.0
+  TASCP (Full Adaptive)              | ASR  52.10% | Q   4.4
+  TASCP (Basis fixed)                | ASR  10.50% | Q  14.4
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 2000 points for attack
+
+--- seed 45 ---
+  Undefended                         | ASR  10.25% | Q  10.7
+  TASCP (Naive)                      | ASR  23.05% | Q  10.1
+  TASCP (Full Adaptive)              | ASR  53.55% | Q   4.4
+  TASCP (Basis fixed)                | ASR   9.90% | Q  14.8
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 2000 points for attack
+
+--- seed 46 ---
+  Undefended                         | ASR  10.55% | Q  10.6
+  TASCP (Naive)                      | ASR  24.20% | Q   9.9
+  TASCP (Full Adaptive)              | ASR  53.00% | Q   4.3
+  TASCP (Basis fixed)                | ASR  10.50% | Q  14.7
+Undefended                         | pooled  10.65% [10.06, 11.27] | seeds: 10.50, 11.35, 10.60, 10.25, 10.55
+TASCP (Naive)                      | pooled  23.53% [22.71, 24.37] | seeds: 22.95, 22.85, 24.60, 23.05, 24.20
+TASCP (Full Adaptive)              | pooled  52.99% [52.01, 53.97] | seeds: 53.60, 52.70, 52.10, 53.55, 53.00
+TASCP (Basis fixed)                | pooled  10.47% [9.89, 11.09] | seeds: 10.30, 11.15, 10.50, 9.90, 10.50
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 2000 points for attack
+  basis-fixed ref [e0,e1 (canonical)   ] ASR  10.30%
+  basis-fixed ref [random pair 1       ] ASR  19.25%
+  basis-fixed ref [random pair 2       ] ASR  10.55%
+  basis-fixed ref [random pair 3       ] ASR  13.80%
+  basis-fixed ref [random pair 4       ] ASR  10.40%
+  basis-fixed ref [random pair 5       ] ASR  30.40%
+  basis-fixed ref [random pair 6       ] ASR  11.00%
+  basis-fixed ref [random pair 7       ] ASR  14.40%
+Basis-fixed reference robustness: mean 15.01% std 6.48% range [10.30%, 30.40%]
+
+--- XGBoost surrogate path (basis-fixed) ---
+  XGB Undefended                     | ASR   1.00%
+  XGB TASCP (Basis fixed)            | ASR   0.65%

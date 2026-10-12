@@ -1,0 +1,46 @@
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 100 points for attack
+
+=== defense: tascp ===
+  defense: tascp
+  coupling_C_norm: 85366376.0
+  coupling_firing_frac: 1.0
+  stat_nu_session: 0.1486
+  stat_nu_allow: 0.3622
+  stat_n_adv0: 52
+  stat_nu_final: 0.125
+  stat_alert_rate: 0.2429
+  evasion: {'nes_independent': 0.0, 'nes_antithetic_jitter': 0.0, 'square': 0.0, 'random_search': 0.9900000095367432}
+
+=== defense: blacklight_sim ===
+  defense: blacklight_sim
+  coupling_C_norm: None
+  coupling_firing_frac: None
+  stat_nu_session: 0.4386
+  stat_nu_allow: 0.0
+  stat_n_adv0: 52
+  stat_nu_final: 0.6579
+  stat_alert_rate: 0.7807
+  evasion: {'nes_independent': 0.0, 'nes_antithetic_jitter': 0.0, 'square': 0.0, 'random_search': 0.0}
+
+=== defense: rate_limit ===
+  defense: rate_limit
+  coupling_C_norm: None
+  coupling_firing_frac: None
+  stat_nu_session: 0.0
+  stat_nu_allow: 0.0
+  stat_n_adv0: 52
+  stat_nu_final: 0.0
+  stat_alert_rate: 0.3421
+  evasion: {'nes_independent': 0.0, 'nes_antithetic_jitter': 0.0, 'square': 0.0, 'random_search': 0.0}
+
+benign false-positive rates: {'tascp': 0.0, 'blacklight_sim': 1.0, 'rate_limit': 0.0}
+
+=== EXP 23 SUMMARY (RQ6 defense audit) ===
+defense          coupling  nu_any nu_allow  nes_independen  nes_antithetic          square   random_search   benignFP
+tascp           85366376.000  14.86%   36.22%            0.0%            0.0%            0.0%           99.0%   0.0%
+blacklight_sim        n/a  43.86%    0.00%            0.0%            0.0%            0.0%            0.0%   100.0%
+rate_limit            n/a   0.00%    0.00%            0.0%            0.0%            0.0%            0.0%   0.0%

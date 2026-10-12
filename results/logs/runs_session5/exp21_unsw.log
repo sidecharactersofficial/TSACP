@@ -1,0 +1,28 @@
+Loading unsw_nb15 dataset (209 MB)...
+Benign samples (streamed): 2218764
+Loading trained NIDS classifier...
+Correctly classified benign: 2202734
+Sampled 100 points for attack
+benign FP at calibrated taus: momentum=0.0%, cosine=0.0%, sign_agreement=0.0%, displacement=0.0%, antithetic_pair=0.0%
+nes_independent        ASR   0.0% | momentum:100.0% | cosine:  1.0% | sign_agreement:  2.0% | displacement:  0.0% | antithetic_pair:  0.0%
+spsa                   ASR   0.0% | momentum:100.0% | cosine:  0.0% | sign_agreement:  0.0% | displacement:  8.0% | antithetic_pair:100.0%
+zoo                    ASR   0.0% | momentum: 35.0% | cosine:  0.0% | sign_agreement:100.0% | displacement:100.0% | antithetic_pair:  0.0%
+simba                  ASR   0.0% | momentum:100.0% | cosine:  0.0% | sign_agreement:  0.0% | displacement:  2.0% | antithetic_pair:100.0%
+square                 ASR   0.0% | momentum: 62.0% | cosine:100.0% | sign_agreement:100.0% | displacement:100.0% | antithetic_pair:100.0%
+boundary               ASR  76.0% | momentum: 77.0% | cosine: 99.0% | sign_agreement: 99.0% | displacement: 46.0% | antithetic_pair: 64.0%
+random_search          ASR 100.0% | momentum:100.0% | cosine:100.0% | sign_agreement:100.0% | displacement:100.0% | antithetic_pair:  0.0%
+nes_antithetic_jitter  ASR   0.0% | momentum: 93.0% | cosine: 94.0% | sign_agreement:  0.0% | displacement:  0.0% | antithetic_pair:  1.0%
+
+=== EXP 21 SUMMARY (RQ3 trigger x attack-family matrix) ===
+attack                      momentum        cosine  sign_agreeme  displacement  antithetic_p
+nes_independent               100.0%          1.0%          2.0%          0.0%          0.0%
+spsa                          100.0%          0.0%          0.0%          8.0%        100.0%
+zoo                            35.0%          0.0%        100.0%        100.0%          0.0%
+simba                         100.0%          0.0%          0.0%          2.0%        100.0%
+square                         62.0%        100.0%        100.0%        100.0%        100.0%
+boundary                       77.0%         99.0%         99.0%         46.0%         64.0%
+random_search                 100.0%        100.0%        100.0%        100.0%          0.0%
+nes_antithetic_jitter          93.0%         94.0%          0.0%          0.0%          1.0%
+
+attacks firing momentum trigger <10% of sessions: 0/8
+triggers firing on >50% of sessions for EVERY attack: none

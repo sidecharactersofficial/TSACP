@@ -1,0 +1,23 @@
+{
+  "experiment_id": "E-EXP14-STATIONARITY",
+  "experiment_number": 14,
+  "claim": "C8",
+  "description": "Stationarity replay: response of the stateful map to replayed trajectory segments.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "replay": "segment"
+  },
+  "expected_output": "results/logs/exp14_stationarity/, results/tables/exp14_stationarity_*.csv",
+  "expected_properties": {
+    "replay_consistency": "deterministic"
+  },
+  "reproducibility_level": "R2",
+  "script": "experiments/exp14_stationarity/run.py",
+  "git_commit": "270807a"
+}

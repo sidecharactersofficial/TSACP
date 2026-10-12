@@ -1,0 +1,22 @@
+# Reproduction environment.
+# Versions below are the exact combination on which the archived results in
+# results/ were produced and from which the paper's numbers were derived.
+
+torch==2.9.1
+numpy==2.4.0
+pandas==2.3.3
+pyarrow==24.0.0
+scipy==1.16.3
+scikit-learn==1.8.0
+xgboost==3.3.0
+joblib==1.5.3
+PyYAML==6.0.3
+matplotlib==3.10.8
+seaborn==0.13.2
+tqdm==4.67.1
+pytest==9.0.2
+
+# CUDA: the archives were produced with a CUDA 12.x torch build. For GPU:
+#   pip install --extra-index-url https://download.pytorch.org/whl/cu128 -r requirements.txt
+# CPU-only reproduction is sufficient for every target except the Transformer
+# architecture comparison (exp22), which is slow without CUDA.

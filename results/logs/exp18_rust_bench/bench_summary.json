@@ -1,0 +1,29 @@
+{
+  "hot_path_single_query": {
+    "point_estimate": 53.29337187903688,
+    "standard_error": 0.34604326617659853,
+    "confidence_interval": {
+      "confidence_level": 0.95,
+      "lower_bound": 52.78228873003087,
+      "upper_bound": 53.947623959345115
+    }
+  },
+  "momentum": {
+    "point_estimate": 6.894997640917797,
+    "standard_error": 0.03811086719851914,
+    "confidence_interval": {
+      "confidence_level": 0.95,
+      "lower_bound": 6.817049113453978,
+      "upper_bound": 6.973775992885438
+    }
+  },
+  "rotation": {
+    "point_estimate": 52.392734822541705,
+    "standard_error": 0.3126313084060786,
+    "confidence_interval": {
+      "confidence_level": 0.95,
+      "lower_bound": 51.64539581877788,
+      "upper_bound": 52.95880414628903
+    }
+  }
+}

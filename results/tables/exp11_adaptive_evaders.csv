@@ -1,0 +1,7 @@
+evader,verified_asr,internal_asr,flag_rate,client_detected
+NES baseline (no evasion),0.0000,0.0000,0.9776,True
+NES + query jitter (0.12),0.0000,0.0000,0.8323,True
+NES + multi-identity (5 ids),0.0000,0.0000,0.4547,True
+NES + multi-identity (10 ids),0.0000,0.0000,0.4518,True
+HSJ baseline (no evasion),0.0000,0.1450,0.9257,True
+HSJ + min-distance (0.15),0.0000,0.1515,0.9184,True

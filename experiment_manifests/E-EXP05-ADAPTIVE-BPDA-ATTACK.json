@@ -1,0 +1,32 @@
+{
+  "experiment_id": "E-EXP05-ADAPTIVE-BPDA-ATTACK",
+  "experiment_number": 5,
+  "claim": "C4",
+  "description": "White-box adaptive attack (BPDA/straight-through) against full TASCP.",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "eps": 0.1,
+    "alpha": 0.01,
+    "iterations": 20,
+    "norm": "L2",
+    "seed": 42,
+    "scope": "2000 correctly-classified benign"
+  },
+  "expected_output": "results/logs/exp5_adaptive_bpda_attack/metrics_unsw_nb15.json; results/tables/exp5_summary_unsw_nb15.csv",
+  "expected_properties": {
+    "undefended_asr": 10.5,
+    "naive_asr": 22.95,
+    "adaptive_asr": 53.6,
+    "mean_queries_adaptive": 4.26
+  },
+  "reproducibility_level": "R3",
+  "script": "experiments/exp5_adaptive_bpda_attack/run.py",
+  "git_commit": "270807a",
+  "note": "Archived per-condition traceability records (config/checkpoint/dataset SHA-256, n_evaluated, n_successful); seeded run reproduces exactly via verification/compare_results.py."
+}

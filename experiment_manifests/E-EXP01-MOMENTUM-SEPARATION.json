@@ -1,0 +1,25 @@
+{
+  "experiment_id": "E-EXP01-MOMENTUM-SEPARATION",
+  "experiment_number": 1,
+  "claim": "C1",
+  "description": "Momentum separation between benign and adversarial query trajectories (Assumptions 1-2).",
+  "datasets": [
+    {
+      "name": "UNSW-NB15",
+      "sha256": "pinned in manifest/dataset_sha256.txt",
+      "path": "data/processed/unsw_nb15/unsw_nb15_processed.parquet"
+    }
+  ],
+  "configuration": {
+    "window_size": "config default",
+    "trigger_tau": 0.0
+  },
+  "expected_output": "none (placeholder runner only)",
+  "expected_properties": {
+    "status": "not implemented"
+  },
+  "reproducibility_level": "NR",
+  "script": "experiments/exp1_momentum_separation/run.py (placeholder)",
+  "git_commit": "270807a",
+  "note": "Placeholder: no implementation and no archived output in this artifact; run.py exits code 2. See doc/OPEN_SCIENCE.md."
+}

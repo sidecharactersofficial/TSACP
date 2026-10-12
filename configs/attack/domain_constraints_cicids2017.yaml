@@ -1,0 +1,44 @@
+# Domain-constrained perturbation spec (CICIDS2017) — used by
+# attacks/domain_constraints.py to project adversarial samples back onto the
+# feasible data domain.
+#
+# Column list curated from a full-data cardinality scan of
+# data/processed/cicids2017/cicids2017_processed.parquet (columns with
+# <= 12 distinct observed levels). CICIDS2017 flow features are mostly
+# continuous statistics; the constrained set is the protocol encoding,
+# TCP flag counts, and constant bulk-activity counters.
+#
+#   binary:     fields with exactly two valid levels
+#   discrete:   label-encoded / low-cardinality categorical fields (snap to the
+#               nearest level observed in the processed data)
+#   immutable:  fields an attacker riding a benign session cannot choose
+#               freely (none identified for CICIDS2017)
+#
+# Levels are derived at runtime from the processed parquet, so the spec never
+# hard-codes encodings.
+
+binary:
+  - Fwd PSH Flags
+  - Fwd URG Flags
+  - FIN Flag Count
+  - SYN Flag Count
+  - RST Flag Count
+  - PSH Flag Count
+  - ACK Flag Count
+  - URG Flag Count
+  - CWE Flag Count
+  - ECE Flag Count
+
+discrete:
+  - Protocol
+  - Bwd PSH Flags
+  - Bwd URG Flags
+  - Fwd Avg Bytes/Bulk
+  - Fwd Avg Packets/Bulk
+  - Fwd Avg Bulk Rate
+  - Bwd Avg Bytes/Bulk
+  - Bwd Avg Packets/Bulk
+  - Bwd Avg Bulk Rate
+  - Down/Up Ratio
+
+immutable: []

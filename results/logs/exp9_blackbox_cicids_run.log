@@ -1,0 +1,72 @@
+Loading cicids2017 dataset (374 MB)...
+Benign samples (streamed): 2273097
+Loading trained NIDS classifier...
+Correctly classified benign: 2232230
+Sampled 2000 points for attack
+
+Domain constraints active on 20 of 78 features
+
+=== EXP 9: Black-box query attacks on cicids2017 (2000 samples, seed 42) ===
+
+--- NES vs Undefended (budget=250) ---
+ASR: 22.30% | Mean Q to success: 142.4 | Mean L2: 0.0599 | Total Q: 504000
+
+--- NES vs TASCP (Naive) (budget=250) ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 22.30% | Mean Q to success: 144.5 | Mean L2: 0.0600 | Total Q: 504000
+
+--- NES vs TASCP (Naive) + domain constraints (budget=250) ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 21.25% | Mean Q to success: 143.5 | Mean L2: 0.0521 | Total Q: 504000
+
+--- NES vs Undefended + domain constraints (budget=250) ---
+ASR: 21.55% | Mean Q to success: 143.1 | Mean L2: 0.0521 | Total Q: 504000
+
+--- HSJ vs Undefended (budget=1000) ---
+ASR: 15.05% | Mean Q to success: 56.1 | Mean L2: 0.6424 | Total Q: 2014000
+
+--- HSJ vs TASCP (Naive) (budget=1000) ---
+Rotation triggered (final query, mean over chunks): 87.35%
+ASR: 87.40% | Mean Q to success: 62.1 | Mean L2: 1.0592 | Total Q: 2041000
+
+--- NES budget=100 vs Undefended ---
+ASR: 8.35% | Mean Q to success: 68.7 | Mean L2: 0.0352 | Total Q: 210000
+
+--- NES budget=100 vs TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 8.30% | Mean Q to success: 68.7 | Mean L2: 0.0353 | Total Q: 210000
+
+--- NES budget=250 vs Undefended ---
+ASR: 22.30% | Mean Q to success: 142.4 | Mean L2: 0.0599 | Total Q: 504000
+
+--- NES budget=250 vs TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 22.30% | Mean Q to success: 144.5 | Mean L2: 0.0600 | Total Q: 504000
+
+--- NES budget=500 vs Undefended ---
+ASR: 38.00% | Mean Q to success: 234.3 | Mean L2: 0.0913 | Total Q: 1008000
+
+--- NES budget=500 vs TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 37.85% | Mean Q to success: 235.6 | Mean L2: 0.0913 | Total Q: 1008000
+
+--- NES budget=1000 vs Undefended ---
+ASR: 41.45% | Mean Q to success: 271.0 | Mean L2: 0.0993 | Total Q: 2016000
+
+--- NES budget=1000 vs TASCP (Naive) ---
+Rotation triggered (final query, mean over chunks): 0.00%
+ASR: 41.50% | Mean Q to success: 274.0 | Mean L2: 0.0993 | Total Q: 2016000
+
+=== EXP 9 (cicids2017) SUMMARY (ASR / mean queries / mean L2) ===
+NES / Undefended                              | ASR:  22.30% | Q:  142.4 | L2: 0.0599
+NES / TASCP (Naive)                           | ASR:  22.30% | Q:  144.5 | L2: 0.0600
+NES / TASCP (Naive) + Domain-Constrained      | ASR:  21.25% | Q:  143.5 | L2: 0.0521
+NES / Undefended + Domain-Constrained         | ASR:  21.55% | Q:  143.1 | L2: 0.0521
+HSJ / Undefended                              | ASR:  15.05% | Q:   56.1 | L2: 0.6424
+HSJ / TASCP (Naive)                           | ASR:  87.40% | Q:   62.1 | L2: 1.0592
+
+NES budget sweep (ASR):
+  budget=  100 | Undefended:   8.35% | TASCP (Naive):   8.30%
+  budget=  250 | Undefended:  22.30% | TASCP (Naive):  22.30%
+  budget=  500 | Undefended:  38.00% | TASCP (Naive):  37.85%
+  budget= 1000 | Undefended:  41.45% | TASCP (Naive):  41.50%

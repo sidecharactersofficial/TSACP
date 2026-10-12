@@ -1,0 +1,6 @@
+condition,pooled_asr,wilson95_lo,wilson95_hi,seed_42,seed_43,seed_44
+NES / Undefended,0.2083,0.1982,0.2188,0.2230,0.2050,0.1970
+NES / TASCP (Naive),0.2075,0.1974,0.2179,0.2230,0.2035,0.1960
+NES / Undefended + Domain-Constrained,0.2020,0.1920,0.2123,0.2155,0.1975,0.1930
+HSJ / Undefended,0.1528,0.1440,0.1622,0.1505,0.1520,0.1560
+HSJ / TASCP (Naive),0.8815,0.8731,0.8894,0.8740,0.8825,0.8880
