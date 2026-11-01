@@ -1,0 +1,11 @@
+name = "archimedes_proofs"
+version = "0.1.0"
+defaultTargets = ["archimedes_proofs"]
+
+[[lean_lib]]
+name = "ArchimedesProofs"
+
+[[lean_exe]]
+name = "archimedes_proofs"
+root = "Main"
+

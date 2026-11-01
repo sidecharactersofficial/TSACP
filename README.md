@@ -24,7 +24,8 @@ shipped checkpoints, scripts, and archived result files.
 | Environment, lockfile, Docker, hardware | `environment/` |
 | Dataset sources | `dataset_links.md` |
 | Threat model (B1/B2) | `doc/THREAT_MODEL.md` |
-| Formal results | `doc/THEOREMS.md` |
+| Formal results & mapping | `doc/THEOREMS.md` |
+| Formal Lean 4 proofs & audit | `leanproofs/` (`ArchimedesProofs.lean`, `MATH_AUDIT_REPORT.md`) |
 | Citation/versioning | `CITATION_TO_ARTIFACT.md` |
 
 **Honest status:** the headline white-box table (exp5), the exp8 ablations, and
@@ -32,8 +33,8 @@ the exp6 false-positive results are now **machine-traceable** (`results/logs/`,
 reproducibility level **R3**: seeded scripts + archived records with config,
 checkpoint and dataset SHA-256s; re-run reproduces the archived numbers
 exactly). The exp7 latency numbers remain prose-only (they require the Rust
-fast-loop server, level **R4**). All remaining gaps are tracked in
-`REPRODUCIBILITY_DISCREPANCY_REPORT.md`.
+fast-loop server, level **R4**). Known limitations are documented in
+`LIMITATIONS.md`.
 
 ## What This Is
 
@@ -105,6 +106,7 @@ doc/                 Whitepaper, architecture, threat model, theorems, evaluatio
                      related work, training, testing, and ADR-001..004 (doc/adr/)
 tascp-proto/         Two-loop prototype (Rust fast-loop, Python slow-loop)
 experiments/         exp1–exp24 (exp1–exp4 placeholders = not reproducible) + exp_transformer
+leanproofs/          Lean 4 formal verification of all 11 theorems/lemmas/corollaries + python validation
 src/tascp_eval/      Evaluation framework, attacks, defenses, models, reference math
 configs/             Dataset/attack configs for hyperparameters and domain constraints
 data/                CICIDS-2017, UNSW-NB15, NF-ToN-IoT-v2 ingestion
@@ -210,6 +212,34 @@ TASCP's theoretical bounds (Lemma 2, Proposition 1) are mathematically sound, bu
 
 This is a **cautionary result**: provable gradient degradation ≠ empirical robustness. Gradient-masking defenses remain structurally vulnerable to BPDA-style attacks.
 
+---
+
+## Formal Verification (Lean 4)
+
+All mathematical statements, proofs, theorems, lemmas, propositions, and corollaries from the paper (*Singularity: The Illusion of Dynamic Security*) are formally verified in **Lean 4** (`leanproofs/`) with **zero `sorry` axioms**:
+
+| Paper Statement | Lean 4 Theorem Identifier | Mathematical Status |
+| :--- | :--- | :--- |
+| **Proposition 1** (Observability Gap & Single-Query Collapse) | `prop1_observability_gap` | Machine Checked |
+| **Lemma 1** (Givens Rotation Structure & Equivariance) | `lem1_givens_in_plane`, `lem1_projection_equivariance` | Machine Checked |
+| **Lemma 2** (Gradient Correlation Decay & Isotropic Invariant) | `lem2_gradient_correlation_decay`, `lem2_isotropic_expectation` | Machine Checked |
+| **Lemma 3** (Angle-Channel Gradient & Product Rule Cancellation) | `lem3_angle_channel_gradient` | Machine Checked |
+| **Proposition 2** (One-Step Angle Bound Below Threshold) | `prop2_one_step_angle_bound` | Machine Checked |
+| **Theorem 1** (No Obfuscation Barrier & Gradient Decomposition) | `thm1_gradient_decomposition`, `thm1_operator_norm_bound` | Machine Checked |
+| **Proposition 3** (Query Tax of Gradient Estimation — NES Scaling) | `prop3_query_tax_scaling` | Machine Checked |
+| **Corollary 1** (Antithetic Blindness & Exponential Tail Invariance) | `cor1_antithetic_blindness` | Machine Checked |
+| **Proposition 4** (Domain Constraints Shrink Feasible Set) | `prop4_domain_constraints_shrink` | Machine Checked |
+| **Proposition 5** (Rejection-Only Directional Safety) | `prop5_rejection_directional_safety` | Machine Checked |
+| **Proposition 6** (Boundary Flip Tube Bound & Necessary Condition) | `prop6_boundary_flip_tube_bound` | Machine Checked |
+
+To verify all proofs:
+```bash
+make verify-proofs
+# or manually:
+cd leanproofs && lake build && .lake/build/bin/archimedes_proofs && python3 verify_math.py
+```
+See [`leanproofs/MATH_AUDIT_REPORT.md`](leanproofs/MATH_AUDIT_REPORT.md) for the complete 1,000+ line audit report.
+
 ## Quick Start
 
 ```bash
@@ -217,6 +247,7 @@ python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 make verify        # checkpoint + dataset SHA-256 integrity
 make smoke         # environment + integrity + traceability + tests (67 tests)
+make verify-proofs # build & verify all 11 Lean 4 theorems + math oracle
 make reproduce-adaptive     # exp5 white-box adaptive attack
 ```
 

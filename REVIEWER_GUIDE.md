@@ -11,7 +11,8 @@ Reviewers do not need to read the repository linearly.
 |---|---|
 | The claim structure (3 core claims) | `doc/EVALUATION_GUIDE.md` |
 | Threat model (B1 black-box vs B2 white-box) | `doc/THREAT_MODEL.md` |
-| Formal results (Lemma 2, Prop 1, Cor 3) | `doc/THEOREMS.md` |
+| Formal results & mappings | `doc/THEOREMS.md` |
+| Formal Lean 4 proofs & audit | `leanproofs/` (`ArchimedesProofs.lean`, `MATH_AUDIT_REPORT.md`) |
 | Claim → evidence mapping | `CLAIM_MAP.md` |
 | Known limits of the artifact | `LIMITATIONS.md` |
 | Methodological history | `PROVENANCE.md` |
@@ -26,7 +27,8 @@ Reviewers do not need to read the repository linearly.
 1. `CLAIM_MAP.md` — understand the claim/evidence structure.
 2. `README.md` "Key Results" — the four ASR numbers.
 3. `make verify && make smoke` — integrity + tests.
-4. `LIMITATIONS.md` — boundaries.
+4. `make verify-proofs` — verify all 11 Lean 4 theorems + numerical oracle.
+5. `LIMITATIONS.md` — boundaries.
 
 ### 30-minute methodology review
 1. `doc/THREAT_MODEL.md` — B1/B2 split.

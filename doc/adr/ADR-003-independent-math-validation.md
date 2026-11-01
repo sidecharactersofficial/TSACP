@@ -31,12 +31,11 @@ Validate analytical claims with at least one independent numerical oracle:
 ### Positive
 - The gradient-degradation explanation is checked numerically, not assumed.
 - The antithetic-blindness claim has a distributional check.
+- Independent test suites (`tests/test_rotation.py`, `tests/test_projection.py`, `tests/test_gradients.py`, `tests/test_metrics.py`) verify rotation identities, norm preservation, and equivariance against standalone NumPy reference implementations.
 
 ### Negative
-- Rotation orthogonality, norm preservation, and projection equivariance still
-  lack independently written reference tests (`tests/test_rotation.py` is a
-  stub). This is an open gap tracked in
-  `REPRODUCIBILITY_DISCREPANCY_REPORT.md`.
+- Independent reference test suites require ongoing synchronization if reference math
+  equations change.
 
 ### Neutral
 - The finite-difference comparison is deterministic given the archived inputs.

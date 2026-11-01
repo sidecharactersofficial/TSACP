@@ -86,6 +86,7 @@ C16, C18 (baseline comparison, third dataset) bound the generality of the failur
 
 - Threat model: `doc/THREAT_MODEL.md`
 - Formal results: `doc/THEOREMS.md`
+- Formal Lean 4 proofs: `leanproofs/ArchimedesProofs.lean` (Audit: `leanproofs/MATH_AUDIT_REPORT.md`)
 - Evaluation structure: `doc/EVALUATION_GUIDE.md`
 - Decision records: `doc/adr/`
 - Provenance: `PROVENANCE.md`

@@ -47,6 +47,8 @@ results/figures/
 !manifest/*.json
 !experiment_manifests/
 !experiment_manifests/*.json
+!src/tascp_eval/models/weights/*.json
+!leanproofs/lake-manifest.json
 
 # Fresh reproduction outputs (never committed; see docs/adr/ADR-004)
 results_fresh/

@@ -10,7 +10,7 @@
 PY ?= python3
 FRESH := results_fresh
 
-.PHONY: help setup verify verify-env test traceability smoke \
+.PHONY: help setup verify verify-env verify-proofs test traceability smoke \
         reproduce-foundational reproduce-adaptive reproduce-ablations \
         reproduce-blackbox reproduce-hybrid reproduce-disambiguation reproduce-multiseed \
         reproduce-stationarity reproduce-refmath reproduce-offline reproduce-hp-sweep \
@@ -22,6 +22,7 @@ help:
 	@echo "Targets:"
 	@echo "  make setup                     install pinned deps (see REPRODUCE.md)"
 	@echo "  make verify                    checkpoint + dataset SHA-256 check"
+	@echo "  make verify-proofs             build and check Lean 4 formal proofs + math suite"
 	@echo "  make verify-env                check interpreter/deps vs requirements.txt"
 	@echo "  make test                      run the test suite"
 	@echo "  make traceability              check archived results carry traceability records"
@@ -51,6 +52,9 @@ help:
 setup:
 	python3 -m venv .venv
 	.venv/bin/pip install -r requirements.txt
+
+verify-proofs:
+	cd leanproofs && lake build && .lake/build/bin/archimedes_proofs && $(PY) verify_math.py
 
 verify-env:
 	$(PY) scripts/verify_environment.py

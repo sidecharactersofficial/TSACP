@@ -7,14 +7,15 @@ document classifies results into four levels so reviewers know what to expect.
 
 | Level | Meaning | Examples in this artifact |
 |-------|---------|---------------------------|
-| R1 | Exact byte-identical reproduction | Checkpoint SHA-256, dataset SHA-256 |
+| R1 | Exact byte-identical / machine-checked reproduction | Checkpoint SHA-256, dataset SHA-256, Lean 4 formal proofs (`leanproofs/`) |
 | R2 | Deterministic numerical reproduction | exp16 reference-math metrics (autograd-vs-FD, ρ, M_t); exp14 stationarity tables; exp23 audit tables |
 | R3 | Statistical / tolerance-based reproduction | exp13 white-box multi-seed, exp9 black-box multi-seed, exp5/exp6/exp8, exp18 Rust bench, exp19–exp22 synthetic-family runs |
 | R4 | Archival verification only | Results with **no** archived machine-readable output (exp7 latency) — verify against `exp*_summary.md` and the shipped logs |
 | NR | Not reproducible | No source and no archived output (exp1–exp4; see `doc/OPEN_SCIENCE.md`) |
 
-## R1: Exact
+## R1: Exact / Machine-Checked
 
+- `leanproofs/` — 11 machine-checked formal theorems in Lean 4 (0 `sorry` axioms).
 - `manifest/checkpoint_sha256.json` — 5 shipped checkpoints.
 - `manifest/dataset_sha256.txt` — 3 preprocessed parquet tensors.
 
@@ -71,4 +72,4 @@ placeholders that exit with code 2.
 - R1 can be checked with `make verify`; R2/R3 with `make smoke` and the
   `reproduce-*` targets; NR targets are reported, not run.
 - R4 and NR are honest limitations, tracked in
-  `REPRODUCIBILITY_DISCREPANCY_REPORT.md` and `doc/OPEN_SCIENCE.md`.
+  `LIMITATIONS.md` and `doc/OPEN_SCIENCE.md`.

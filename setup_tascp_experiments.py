@@ -18,7 +18,7 @@ The current evaluations are verified against the prototype's `windowed-average` 
 name = "tascp-experiments"
 version = "0.1.0"
 description = "Empirical validation suite for TASCP"
-authors = ["Anonymous Authors"]  # No co-authors — double-blind review artifact
+authors = ["TASCP Research Team"]
 
 [tool.poetry.dependencies]
 python = "^3.11"

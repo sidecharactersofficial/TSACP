@@ -60,6 +60,7 @@ python data/ton_iot/train_ton_iot.py                     # NF-ToN-IoT-v2 MLP
 | `reproduce-arch` | C13 | `python -m experiments.exp22_arch_split.run unsw_nb15` | minutes |
 | `reproduce-audit` | C14 | `python -m experiments.exp23_defense_audit.run unsw_nb15` | minutes |
 | `reproduce-performance` | C15 | `python -m experiments.exp7_latency_benchmark.run` + Rust bench | seconds–minutes |
+| `verify-proofs` | Math | `cd leanproofs && lake build && python3 verify_math.py` | <10 seconds |
 
 Fresh outputs are written under `results_fresh/` (or a `.fresh` suffix) and are
 **never** allowed to overwrite the canonical archive in `results/`. Compare

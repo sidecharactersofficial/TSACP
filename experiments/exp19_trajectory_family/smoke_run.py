@@ -1,7 +1,10 @@
 """End-to-end synthetic smoke test for exp19 eval_variants (all paths)."""
-import sys, os
-sys.path.insert(0, os.path.join(os.path.dirname(os.getcwd()) if False else ".", ""))
-sys.path.insert(0, ".")
+import os
+import sys
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
 import torch
 import torch.nn as nn

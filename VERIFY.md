@@ -69,6 +69,25 @@ PY
 | C9 (reference math) | `python -m experiments.exp16_refmath_validation.run` | median rel err ~1e-5; E[M_t] ~ -0.70 |
 | C15 (performance) | see `experiments/exp7_latency_benchmark/` and `tascp-proto/fast-loop` | 7.08 ms HTTP mean; 53.3 ns/query in-process |
 
+## Step 6: Verify Formal Lean 4 Proofs
+
+All mathematical claims from the paper (Theorems, Lemmas, Propositions, and Corollaries) are formally verified with **zero `sorry` axioms** in `leanproofs/`.
+
+```bash
+make verify-proofs
+# or manually:
+cd leanproofs
+lake build
+./.lake/build/bin/archimedes_proofs
+python3 verify_math.py
+```
+
+Expected output:
+- `Build completed successfully (8 jobs)`
+- All 11 theorems/lemmas/propositions/corollaries pass.
+- Python verification suite: `11/11 tests pass`.
+- Comprehensive line-by-line audit in `leanproofs/MATH_AUDIT_REPORT.md`.
+
 ## What Not to Expect
 
 - **Byte-identical reproduction** of stochastic attacks. Use `verification/compare_results.py`.

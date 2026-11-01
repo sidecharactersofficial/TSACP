@@ -59,10 +59,10 @@ HSJ + min-distance (0.15)              | verified ASR   0.00% | flag rate  90.4%
 Traceback (most recent call last):
   File "<frozen runpy>", line 203, in _run_module_as_main
   File "<frozen runpy>", line 88, in _run_code
-  File "/root/workspace/workspace/03-Code/Projects/Legacy/Project Archimedes/experiments/exp11_detector_robustness/run.py", line 649, in <module>
+  File "experiments/exp11_detector_robustness/run.py", line 649, in <module>
     run(dataset=ds)
     ~~~^^^^^^^^^^^^
-  File "/root/workspace/workspace/03-Code/Projects/Legacy/Project Archimedes/experiments/exp11_detector_robustness/run.py", line 625, in run
+  File "experiments/exp11_detector_robustness/run.py", line 625, in run
     tau, k = key.split(", k=")
     ^^^^^^
 ValueError: not enough values to unpack (expected 2, got 1)

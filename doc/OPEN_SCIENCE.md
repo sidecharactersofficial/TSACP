@@ -45,6 +45,7 @@ describe the core and the full suite respectively.
 | exp23 | C14 | Defense-class audit | `experiments/exp23_defense_audit/run.py` | `results/tables/exp23_defense_audit_*.csv` | R2 |
 | exp24 | C18 | Third dataset (NF-ToN-IoT-v2) transfer | `experiments/exp24_ton_iot_transfer/run.py` | `data/ton_iot/exp24_summary.md`, `results/tables/*_ton_iot.csv` | R3 |
 | exp_transformer | C13 | Cross-architecture Transformer | `experiments/exp_transformer/run.py` | `results/cross_architecture_transformer.md` | R3 |
+| formal_proofs | Math | Lean 4 formal proofs of all 11 theorems/lemmas/propositions/corollaries | `leanproofs/ArchimedesProofs.lean`, `leanproofs/verify_math.py` | `leanproofs/MATH_AUDIT_REPORT.md` | R1 |
 
 ## Known gaps (stated plainly)
 
@@ -62,4 +63,4 @@ describe the core and the full suite respectively.
 
 - `CLAIM_MAP.md` — claim → evidence mapping.
 - `REPRODUCIBILITY_LEVELS.md` — definition of R1–R4 (+NR).
-- `REPRODUCIBILITY_DISCREPANCY_REPORT.md` — the audit this inventory responds to.
+- `LIMITATIONS.md` — known limitations and boundary conditions.

@@ -9,7 +9,7 @@ description = "Empirical validation of the TASCP defense for DNN-based NIDS."
 readme = "README.md"
 requires-python = ">=3.11,<3.15"
 license = { text = "MIT" }
-authors = [{ name = "Anonymous Authors" }] # No co-authors — double-blind review artifact
+authors = [{ name = "TASCP Research Team" }]
 # Pinned to the exact environment on which the archived results were produced.
 # Kept in sync with requirements.txt (the canonical reproduction manifest).
 dependencies = [
